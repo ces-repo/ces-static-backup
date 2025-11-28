@@ -1,0 +1,16 @@
+#masthead .icon-search {
+    font-family: var(--icons-font) !important;
+	    font-weight: 300 !important;
+}
+#masthead  i.icon-search:before {
+    content: "\f002";
+}
+i.icon-search:before {
+    content: "\f002";
+    font-family: var(--icons-font);
+}
+@media screen and (max-width:1440px){
+	.thwcfd-field-text input, .thwcfd-field-wrapper input, .thwcfd-field-wrapper select {
+        font-size: 13px;
+    }
+}
