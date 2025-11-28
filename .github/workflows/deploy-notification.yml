@@ -1,0 +1,14 @@
+name: Deployment Notification
+
+on:
+  push:
+    branches: [gh-pages]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification
+        run: |
+          echo "Backup updated at $(date)" >> $GITHUB_STEP_SUMMARY
+          # Optional: Email/Slack notification
