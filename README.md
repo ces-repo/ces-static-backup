@@ -12,6 +12,6 @@
 Bei Ausfall der Hauptseite:
 1. Cloudflare Worker aktiviert automatisch dieses Backup
 2. Manuelle Umschaltung: DNS auf `ces-repo.github.io` zeigen
-3. Kontakt: info@catering-miete.ch
+3. Kontakt: anfrage@catering-miete.ch
 
 ⚠️ **Dies ist eine statische Notfall-Version - Bestellungen nur telefonisch!**
