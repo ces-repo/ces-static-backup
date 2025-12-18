@@ -483,7 +483,7 @@
         position: absolute;
         width: 11px;
         height: 6px;
-        background: url(./../../../../uploads/2022/02/arrow-white.png);
+        background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/arrow-white.png);
         top: 50%;
         transform: translateY(-50%);
         margin-left: 10px;
@@ -514,7 +514,7 @@
     }
     .mobile-btnz .round-btn.wishlist-link .icon-heart:before {
         content: "";
-        background: url(./../../../../uploads/2022/02/heart-icon.svg);
+        background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/heart-icon.svg);
         width: 21px;
         height: 21px;
         position: absolute;
@@ -531,7 +531,7 @@
     }
     .mobile-btnz .round-btn.plain :after {
         content: "";
-        background: url(./../../../../uploads/2022/02/Vergleichen-Icon.svg);
+        background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/Vergleichen-Icon.svg);
         width: 20px;
         height: 20px;
         position: absolute;
@@ -697,7 +697,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(./../../../../uploads/2022/03/arrow-right.svg);
+    background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/arrow-right.svg);
     background-size: cover;
     width: 6px;
     height: 11px;
@@ -738,7 +738,7 @@
         position: absolute;
         right: 0;
         top: -40px;
-        background-image: url(./../../../../uploads/2022/03/Konto-Icon.svg);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/Konto-Icon.svg);
         background-repeat: no-repeat;
         background-position: center;
         margin: 0;
@@ -789,7 +789,7 @@
         position: absolute;
         left: 26px;
         top: 50px;
-        background-image: url(./../../../../uploads/2022/03/cross-me.svg);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/cross-me.svg);
         background-size: cover;
         background-repeat: no-repeat;
         width: 22px;
@@ -833,7 +833,7 @@
         padding-right: 5px;
     }
     .mobile-sidebar > .sidebar-menu > ul > li.header-wishlist-icon a {
-        background-image: url(./../../../../uploads/2022/02/heart-icon.svg);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/heart-icon.svg);
         background-position: 30px center;
         background-repeat: no-repeat;
         padding-left: 62px;
@@ -898,7 +898,7 @@
 @media (max-width: 849px) {
     .header-cart-icon {
         position: relative;
-        background-image: url(./../../../../uploads/2022/03/cart-icon.png);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/cart-icon.png);
         background-position: center;
         background-repeat: no-repeat;
         width: 25px;
@@ -1052,16 +1052,16 @@
     }
     .four-steps-accordion.faq-accordions .faq-title.acc-title:first-child .accordion-title {
         padding-top: 24px;
-        background-image: url(./../../../../uploads/2022/02/icon-1.png);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/icon-1.png);
     }
     .four-steps-accordion.faq-accordions .faq-title.acc-title:nth-child(2) .accordion-title {
-        background-image: url(./../../../../uploads/2022/02/icon-2.png);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/icon-2.png);
     }
     .four-steps-accordion.faq-accordions .faq-title.acc-title:nth-child(3) .accordion-title {
-        background-image: url(./../../../../uploads/2022/02/icon-3.png);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/icon-3.png);
     }
     .four-steps-accordion.faq-accordions .faq-title.acc-title:nth-child(4) .accordion-title {
-        background-image: url(./../../../../uploads/2022/02/icon-4.png);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/icon-4.png);
     }
 
     .offer-section-wrap .row .row .large-5 {
@@ -2343,7 +2343,7 @@
     }
     .header-cart-icon {
         position: relative;
-        background-image: url(./../../../../uploads/2022/03/cart-icon.png);
+        background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/cart-icon.png);
         background-position: center;
         background-repeat: no-repeat;
         width: 25px;
@@ -2372,7 +2372,7 @@
         display: none;
     }
     .contact-bd-banner .bg.bg-loaded {
-        background-image: url("./../../../../uploads/2022/03/contact-mob.jpg") !important;
+        background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/contact-mob.jpg") !important;
     }
     .compare-table-wrap {
         display: flex;
