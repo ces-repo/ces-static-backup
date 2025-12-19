@@ -1,0 +1,492 @@
+/* WC Touch Gallery Styles - 75" Portrait Touchscreen Optimiert */
+
+/* ===== GLOBAL RESETS & FORCE OVERRIDES ===== */
+.touch-gallery-modal *,
+.touch-gallery-modal *::before,
+.touch-gallery-modal *::after {
+    box-sizing: border-box !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+/* EXIF-ROTATION SUPPORT */
+.gallery-image,
+#lightboxImage,
+#autoplayImage {
+    image-orientation: from-image !important;
+}
+
+/* ===== MODAL CONTAINER - PORTRAIT OPTIMIERT ===== */
+.touch-gallery-modal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 50000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    animation: modalFadeIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.touch-gallery-modal[style*="display: flex"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.modal-backdrop {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.96) !important;
+    backdrop-filter: blur(8px) !important;
+    z-index: 1 !important;
+}
+
+.modal-content {
+    position: relative !important;
+    width: 96vw !important;
+    height: 96vh !important;
+    max-width: 1600px !important; /* Optimiert für Portrait 75" */
+    max-height: 2400px !important;
+    background: linear-gradient(145deg, #1e1e1e, #0a0a0a) !important;
+    border-radius: 25px !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    box-shadow: 
+        0 25px 80px rgba(0, 0, 0, 0.8),
+        0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ===== MODAL HEADER - EXTRA GROß ===== */
+.modal-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 40px 50px !important;
+    background: linear-gradient(135deg, #2d3748, #1a202c) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+    min-height: 140px !important;
+    flex-shrink: 0 !important;
+}
+
+.modal-title {
+    color: #ffffff !important;
+    font-size: 3.2rem !important;
+    font-weight: 300 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    flex: 1 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+    letter-spacing: 0.5px !important;
+}
+
+.modal-close {
+    background: linear-gradient(135deg, #dc2626, #b91c1c) !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+    cursor: pointer !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    min-width: 100px !important;
+    min-height: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4) !important;
+    flex-shrink: 0 !important;
+}
+
+.modal-close:hover,
+.modal-close:active {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 12px 35px rgba(220, 38, 38, 0.6) !important;
+}
+
+/* ===== MODAL BODY ===== */
+.modal-body {
+    flex: 1 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+/* ===== MAIN IMAGE CONTAINER - PORTRAIT FOKUS ===== */
+.main-image-container {
+    height: 100% !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #000000 !important;
+    overflow: hidden !important;
+}
+
+.main-image {
+    max-width: 95% !important;
+    max-height: 95% !important;
+    object-fit: contain !important;
+    border-radius: 12px !important;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* ===== NAVIGATION BUTTONS - EXTRA GROß FÜR TOUCH ===== */
+.nav-btn {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    font-size: 4.5rem !important;
+    font-weight: 300 !important;
+    cursor: pointer !important;
+    padding: 50px 30px !important;
+    border-radius: 20px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    z-index: 10 !important;
+    min-width: 130px !important;
+    min-height: 160px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+    touch-action: manipulation !important;
+}
+
+.prev-btn {
+    left: 25px !important;
+}
+
+.next-btn {
+    right: 25px !important;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)) !important;
+    color: #000000 !important;
+    transform: translateY(-50%) scale(1.08) !important;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* ===== IMAGE COUNTER - GROß & SICHTBAR ===== */
+.image-counter {
+    position: absolute !important;
+    top: 30px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)) !important;
+    color: #ffffff !important;
+    padding: 20px 40px !important;
+    border-radius: 30px !important;
+    font-size: 2.2rem !important;
+    font-weight: 600 !important;
+    z-index: 11 !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    letter-spacing: 1px !important;
+    min-width: 140px !important;
+    text-align: center !important;
+}
+
+/* ===== HIDDEN CLASS ===== */
+.hidden {
+    display: none !important;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0 !important;
+        transform: scale(0.94) !important;
+    }
+    to {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1 !important;
+    }
+    50% {
+        opacity: 0.7 !important;
+    }
+}
+
+/* ===== LOADING STATES ===== */
+.main-image[src=""],
+.main-image:not([src]) {
+    opacity: 0 !important;
+}
+
+.main-image-container::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    margin: -30px 0 0 -30px !important;
+    border: 4px solid rgba(255, 255, 255, 0.2) !important;
+    border-top: 4px solid #ffffff !important;
+    border-radius: 50% !important;
+    animation: spin 1s linear infinite !important;
+    opacity: 0 !important;
+    z-index: 5 !important;
+}
+
+.main-image-container.loading::before {
+    opacity: 1 !important;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg) !important; }
+    100% { transform: rotate(360deg) !important; }
+}
+
+/* ===== RESPONSIVE - PORTRAIT FOCUS ===== */
+@media (orientation: portrait) and (max-width: 1400px) {
+    .modal-content {
+        width: 98vw !important;
+        height: 98vh !important;
+    }
+    
+    .modal-title {
+        font-size: 2.8rem !important;
+    }
+    
+    .modal-close {
+        min-width: 85px !important;
+        min-height: 85px !important;
+        font-size: 3rem !important;
+    }
+    
+    .nav-btn {
+        font-size: 4rem !important;
+        padding: 40px 25px !important;
+        min-width: 110px !important;
+        min-height: 140px !important;
+    }
+    
+    .image-counter {
+        font-size: 2rem !important;
+        padding: 18px 35px !important;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1000px) {
+    .modal-header {
+        padding: 30px 35px !important;
+        min-height: 110px !important;
+    }
+    
+    .modal-title {
+        font-size: 2.4rem !important;
+    }
+    
+    .modal-close {
+        min-width: 70px !important;
+        min-height: 70px !important;
+        font-size: 2.5rem !important;
+    }
+    
+    .nav-btn {
+        font-size: 3.5rem !important;
+        padding: 35px 20px !important;
+        min-width: 95px !important;
+        min-height: 120px !important;
+    }
+    
+    .prev-btn {
+        left: 15px !important;
+    }
+    
+    .next-btn {
+        right: 15px !important;
+    }
+    
+    .image-counter {
+        font-size: 1.8rem !important;
+        padding: 15px 30px !important;
+        top: 20px !important;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 800px) {
+    .modal-header {
+        min-height: 80px !important;
+        padding: 20px 30px !important;
+    }
+    
+    .modal-title {
+        font-size: 2rem !important;
+    }
+    
+    .modal-close {
+        min-width: 60px !important;
+        min-height: 60px !important;
+        font-size: 2rem !important;
+    }
+    
+    .nav-btn {
+        font-size: 3rem !important;
+        padding: 25px 15px !important;
+        min-width: 80px !important;
+        min-height: 100px !important;
+    }
+    
+    .image-counter {
+        font-size: 1.6rem !important;
+        padding: 12px 25px !important;
+    }
+}
+
+/* ===== HIGH DPI DISPLAYS - 4K+ OPTIMIERUNG ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .modal-title {
+        font-size: 3.8rem !important;
+    }
+    
+    .modal-close {
+        font-size: 4rem !important;
+    }
+    
+    .nav-btn {
+        font-size: 5rem !important;
+    }
+    
+    .image-counter {
+        font-size: 2.6rem !important;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+    .touch-gallery-modal,
+    .modal-close,
+    .nav-btn,
+    .main-image {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .main-image-container::before {
+        animation: none !important;
+    }
+}
+
+/* ===== FOCUS STYLES FÜR KEYBOARD NAVIGATION ===== */
+.modal-close:focus,
+.nav-btn:focus {
+    outline: 3px solid #60a5fa !important;
+    outline-offset: 4px !important;
+}
+
+/* ===== TOUCH OPTIMIZATIONS ===== */
+.modal-close,
+.nav-btn {
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Größere Touch-Targets für bessere Bedienbarkeit */
+@media (pointer: coarse) {
+    .modal-close {
+        min-width: 120px !important;
+        min-height: 120px !important;
+        padding: 25px !important;
+    }
+    
+    .nav-btn {
+        min-width: 150px !important;
+        min-height: 180px !important;
+        padding: 55px 35px !important;
+    }
+}
+
+/* ===== SPEZIELLE STYLES FÜR 75" DISPLAYS ===== */
+@media (min-width: 2000px) and (min-height: 3000px) {
+    .modal-content {
+        max-width: 1800px !important;
+        max-height: 2800px !important;
+    }
+    
+    .modal-header {
+        min-height: 180px !important;
+        padding: 60px 80px !important;
+    }
+    
+    .modal-title {
+        font-size: 4.5rem !important;
+    }
+    
+    .modal-close {
+        min-width: 140px !important;
+        min-height: 140px !important;
+        font-size: 4.5rem !important;
+    }
+    
+    .nav-btn {
+        font-size: 6rem !important;
+        min-width: 180px !important;
+        min-height: 220px !important;
+        padding: 70px 50px !important;
+    }
+    
+    .image-counter {
+        font-size: 3rem !important;
+        padding: 25px 50px !important;
+    }
+}
+
+/* ===== ERROR HANDLING ===== */
+.main-image:not([src]),
+.main-image[src=""] {
+    display: none !important;
+}
+
+.main-image-container:empty::after {
+    content: '📷 Bild wird geladen...' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 2rem !important;
+    text-align: center !important;
+}
+
+/* ===== PERFORMANCE OPTIMIERUNGEN ===== */
+.touch-gallery-modal {
+    will-change: opacity, transform !important;
+}
+
+.main-image {
+    will-change: opacity !important;
+}
+
+.nav-btn {
+    will-change: transform, background-color !important;
+}
+
+.modal-close {
+    will-change: transform, background-color !important;
+}
