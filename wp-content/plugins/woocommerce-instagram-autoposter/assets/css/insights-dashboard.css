@@ -1,0 +1,31 @@
+.account-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.stat-box {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stat-box h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+/* Top-Posts Table */
+.wp-list-table img {
+    border-radius: 3px;
+}

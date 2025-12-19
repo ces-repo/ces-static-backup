@@ -1,0 +1,61 @@
+/* Admin-Styling für Instagram Fotoshootings */
+
+.wc-instagram-shoots-admin .form-table th {
+    width: 200px;
+}
+
+.wc-instagram-shoots-admin .credit-row {
+    margin-bottom: 10px;
+}
+
+.wc-instagram-shoots-admin .credit-row input {
+    margin-right: 10px;
+}
+
+.wc-instagram-shoots-admin .spinner {
+    float: none;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.wc-instagram-shoots-admin .status-active {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.wc-instagram-shoots-admin .status-inactive {
+    color: #dc3232;
+}
+
+.wc-instagram-shoots-admin .status-success {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.wc-instagram-shoots-admin .status-error {
+    color: #dc3232;
+}
+
+.wc-instagram-shoots-admin button {
+    margin-right: 5px !important;
+}
+
+.wc-instagram-shoots-admin h2 {
+    margin-top: 30px;
+}
+
+/* Responsive Anpassungen */
+@media screen and (max-width: 782px) {
+    .wc-instagram-shoots-admin .form-table td input[type=text] {
+        width: 100%;
+    }
+    
+    .wc-instagram-shoots-admin .credit-row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .wc-instagram-shoots-admin .credit-row input {
+        margin-bottom: 5px;
+    }
+}
