@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sass": "^1.57.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch assets/css/tzn-digital.scss:assets/css/tzn-digital.min.css  --style compressed"
+  }
+}

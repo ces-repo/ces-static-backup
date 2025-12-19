@@ -1,0 +1,33 @@
+<svg id="mastercard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.872" height="33.915" viewBox="0 0 50.872 33.915">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.225" cy="0.088" r="1.133" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc0"/>
+      <stop offset="0.092" stop-color="#ffc800"/>
+      <stop offset="0.174" stop-color="#ffbd00"/>
+      <stop offset="0.253" stop-color="#ffab00"/>
+      <stop offset="0.329" stop-color="#ff9100"/>
+      <stop offset="0.405" stop-color="#ff7000"/>
+      <stop offset="0.479" stop-color="#ff4700"/>
+      <stop offset="0.55" stop-color="#ff1800"/>
+      <stop offset="0.582" stop-color="red"/>
+      <stop offset="1" stop-color="red"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.024" cy="0.145" r="1.392" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00b4e6"/>
+      <stop offset="0.201" stop-color="#00b0e3"/>
+      <stop offset="0.39" stop-color="#01a5db"/>
+      <stop offset="0.574" stop-color="#0292cd"/>
+      <stop offset="0.755" stop-color="#0377ba"/>
+      <stop offset="0.932" stop-color="#0455a1"/>
+      <stop offset="1" stop-color="#054696"/>
+    </radialGradient>
+  </defs>
+  <path id="Pfad_6358" data-name="Pfad 6358" d="M6.455.5H45.417a5.706,5.706,0,0,1,5.955,5.417V29a5.706,5.706,0,0,1-5.955,5.417H6.455A5.706,5.706,0,0,1,.5,29V5.917A5.706,5.706,0,0,1,6.455.5Z" transform="translate(-0.5 -0.5)"/>
+  <g id="Twint" transform="translate(4.634 9.899)">
+    <g id="Gruppe_58508" data-name="Gruppe 58508" transform="translate(0.001 0.115)">
+      <path id="Shape1" d="M11.948,10.47a.627.627,0,0,1-.278.49L6.308,14.152a.6.6,0,0,1-.555,0L.391,10.959a.626.626,0,0,1-.278-.49V4.084a.627.627,0,0,1,.278-.49L5.753.4a.6.6,0,0,1,.555,0L11.67,3.594a.626.626,0,0,1,.278.49Zm29.77-5.926h-4.8V5.725h1.724v5.053H40V5.725h1.717Zm-21.807,0H15.1V5.725h1.724v5.053h1.359V5.725H19.91Zm13.895-.2A2.22,2.22,0,0,0,31.453,6.78v4H32.8V6.75A1,1,0,0,1,33.82,5.643,1.043,1.043,0,0,1,34.836,6.75v4.029H36.18v-4a2.233,2.233,0,0,0-2.374-2.432Zm-5.07.2v6.235H30.08V4.543Zm-4.559,2.47.044.279,1.264,3.486h.548l1.717-6.235H26.427l-.818,3.276-.051.354-.066-.354L24.4,4.543h-.438l-1.1,3.276-.066.354-.044-.354-.818-3.276H20.6l1.717,6.235h.548l1.264-3.486.044-.279" transform="translate(-0.113 -0.334)" fill="#fff"/>
+      <path id="Shape2" d="M18.807,16.234,17.4,18.35l-.716-1.13.825-1.272a1.739,1.739,0,1,0-3.017-1.7,1.677,1.677,0,0,0,.095,1.679s.46.693.84,1.28l.621.926.935,1.476a.539.539,0,0,0,.416.241.583.583,0,0,0,.424-.256L20.02,16.25H18.807v-.015Zm-2.754.053s-.365-.572-.606-.972a.707.707,0,1,1,1.213,0C16.426,15.714,16.053,16.287,16.053,16.287Z" transform="translate(-10.092 -9.276)" fill="url(#radial-gradient)"/>
+      <path id="Pfad_36364" data-name="Pfad 36364" d="M8.29,18.282,6.917,16.294s-.365-.572-.606-.972a.713.713,0,0,1,.606-1.069.619.619,0,0,1,.2.03l.482-.911a1.7,1.7,0,0,0-.679-.151,1.723,1.723,0,0,0-1.563,1.024,1.677,1.677,0,0,0,.095,1.679l2.4,3.667a.565.565,0,0,0,.431.264.546.546,0,0,0,.424-.256l.723-1.137-.621-.941-.526.761Z" transform="translate(-3.673 -9.275)" fill="url(#radial-gradient-2)"/>
+    </g>
+  </g>
+</svg>
