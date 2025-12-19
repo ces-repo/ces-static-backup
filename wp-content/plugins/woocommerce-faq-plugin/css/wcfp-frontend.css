@@ -1,0 +1,35 @@
+
+.faq-accordions {
+    margin: 2em 0;
+}
+.accordion-item {
+    margin-bottom: 1em;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.faq-title {
+    padding: 15px;
+    margin: 0;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+}
+.faq-title:after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.faq-title.active:after {
+    content: '-';
+}
+.faq-text-desc {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #e0e0e0;
+}

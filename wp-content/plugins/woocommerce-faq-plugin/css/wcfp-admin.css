@@ -1,0 +1,31 @@
+
+.wcfp-product-search-wrapper {
+    margin-bottom: 15px;
+}
+.wcfp-search-results {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    display: none;
+}
+.wcfp-search-results div {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.wcfp-search-results div:hover {
+    background-color: #f0f0f0;
+}
+.wcfp-selected-products ul {
+    margin: 0;
+}
+.wcfp-selected-products li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+.wcfp-remove-product {
+    color: #a00;
+    text-decoration: none;
+}
