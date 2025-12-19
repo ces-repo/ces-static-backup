@@ -1,0 +1,947 @@
+/**
+ * WooCommerce Rental Lists stylesheet
+ * Konsolidierte Version mit Mobile-First-Ansatz
+ */
+
+/* ------------------- */
+/* Allgemeine Styles   */
+/* ------------------- */
+.woocommerce-rental-lists {
+    margin-bottom: 2em;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 2em;
+}
+
+/* Überschriften */
+.woocommerce-rental-lists h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0.5em;
+}
+
+.woocommerce-rental-lists h2 {
+    font-size: 1.4em;
+    margin: 1.5em 0 0.7em;
+    color: #444;
+}
+
+.woocommerce-rental-lists h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+
+/* Intro-Text */
+.rental-lists-intro {
+    margin-bottom: 2em;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Formulare */
+.rental-list-form .form-row {
+    margin-bottom: 1em;
+}
+
+.rental-list-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+.rental-list-form input[type="text"],
+.rental-list-form input[type="number"],
+.rental-list-form textarea,
+.rental-list-form select {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rental-list-form input[type="text"]:focus,
+.rental-list-form input[type="number"]:focus,
+.rental-list-form textarea:focus,
+.rental-list-form select:focus {
+    border-color: #8BC34A;
+    box-shadow: 0 0 0 2px rgba(139, 195, 74, 0.2);
+    outline: none;
+}
+
+.rental-list-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.rental-list-form button {
+    cursor: pointer;
+}
+
+/* ------------------- */
+/* Buttons             */
+/* ------------------- */
+
+/* Primäre Buttons (Grün) */
+.rental-list-form button[type="submit"],
+.add-product-to-list,
+.add-list-to-cart,
+.rental-list-create button,
+#add-product-button {
+    background-color: #8BC34A;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0.7em 1.5em;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.rental-list-form button[type="submit"]:hover,
+.add-product-to-list:hover,
+.add-list-to-cart:hover,
+.rental-list-create button:hover,
+#add-product-button:hover {
+    background-color: #7CB342;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.rental-list-form button[type="submit"]:active,
+.add-product-to-list:active,
+.add-list-to-cart:active,
+.rental-list-create button:active,
+#add-product-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#add-product-button {
+    width: 100%;
+}
+
+/* Zurücksetzen-Button */
+#reset-product-search {
+    background-color: transparent;
+    border: none;
+    color: #888;
+    font-size: 0.85em;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#reset-product-search:hover {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+#reset-product-search:before {
+    content: "←";
+    margin-right: 5px;
+}
+
+/* Button-Zustände */
+button.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+    position: relative;
+}
+
+button.loading:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    right: 10px;
+    margin-top: -7px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: button-loader-spin 0.8s linear infinite;
+}
+
+@keyframes button-loader-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ------------------- */
+/* Mietlisten          */
+/* ------------------- */
+.rental-lists {
+    margin-top: 1.5em;
+}
+
+.rental-list {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: box-shadow 0.3s ease;
+}
+
+.rental-list:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.rental-list-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.rental-list-name {
+    margin: 0 0 0.5em 0;
+    font-size: 1.1em;
+}
+
+.rental-list-description {
+    margin: 0.5em 1em 1.5em;
+    padding: 0.8em 1em;
+    color: #666;
+    background-color: #f9f9f9;
+    border-left: 3px solid #8BC34A;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.rental-list-description p {
+    margin: 0 0 0.8em;
+}
+
+.rental-list-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Action-Buttons */
+.rental-list-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+.rental-list-actions button {
+    background-color: #f5f5f5;
+    color: #555;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.rental-list-actions button:hover {
+    background-color: #ebebeb;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons für Aktions-Buttons */
+.rental-list-edit:before,
+.rental-list-duplicate:before,
+.rental-list-delete:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rental-list-edit:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='%23555' d='M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z'/%3E%3C/svg%3E");
+}
+
+.rental-list-duplicate:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='%23555' d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z'/%3E%3C/svg%3E");
+}
+
+.rental-list-delete:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='%23555' d='M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z'/%3E%3C/svg%3E");
+}
+
+.rental-list-delete:hover {
+    background-color: #ffebee;
+    color: #e53935;
+}
+
+.rental-list-delete:hover:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='%23e53935' d='M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z'/%3E%3C/svg%3E");
+}
+
+/* Tabelle der Listenartikel */
+.rental-list-items {
+    width: 100%;
+    margin-bottom: 1em;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.rental-list-items th,
+.rental-list-items td {
+    padding: 0.8em;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+.rental-list-items th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #666;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #eee;
+}
+
+.rental-list-items tr:hover {
+    background-color: #f9f9f9;
+}
+
+.rental-list-items .product-thumbnail {
+    display: none; /* Auf Mobilgeräten ausblenden */
+    width: 70px;
+}
+
+.rental-list-items .product-name {
+    width: 40%;
+}
+
+.rental-list-items .product-price {
+    width: 25%;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.rental-list-items .product-quantity {
+    width: 25%;
+}
+
+.rental-list-items .product-quantity input {
+    width: 50px;
+    text-align: center;
+    padding: 0.3em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.rental-list-items .product-remove {
+    width: 10%;
+    text-align: center;
+}
+
+.rental-list-items .product-remove a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.rental-list-items .product-remove a:hover {
+    background-color: #ffebee;
+    color: #e53935;
+}
+
+/* Verbesserte Button-Styles */
+.add-single-to-cart,
+.add-list-to-cart {
+    background: linear-gradient(to bottom, #8BC34A, #7CB342) !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s !important;
+}
+
+.add-single-to-cart:hover,
+.add-list-to-cart:hover {
+    background: linear-gradient(to bottom, #7CB342, #689F38) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-2px) !important;
+}
+
+.add-single-to-cart:active,
+.add-list-to-cart:active {
+    background: linear-gradient(to bottom, #689F38, #558B2F) !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(1px) !important;
+}
+
+/* "Alles in den Warenkorb" Button hervorheben */
+.add-list-to-cart {
+    background: linear-gradient(to bottom, #FF9800, #F57C00) !important;
+}
+
+.add-list-to-cart:hover {
+    background: linear-gradient(to bottom, #F57C00, #EF6C00) !important;
+}
+
+.add-list-to-cart:active {
+    background: linear-gradient(to bottom, #EF6C00, #E65100) !important;
+}
+
+/* Aktionen für die Produktliste */
+.rental-list-product-actions {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+/* Verbesserter Ladezustand */
+.add-single-to-cart.loading,
+.add-list-to-cart.loading {
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: wait !important;
+}
+
+.add-single-to-cart.loading:after,
+.add-list-to-cart.loading:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    right: 15px;
+    margin-top: -9px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: button-spinner 0.8s linear infinite;
+}
+
+@keyframes button-spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rental-list-product-actions button {
+    width: 100%;
+    padding: 0.7em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+/* Leere Liste Styling */
+.rental-list-empty {
+    padding: 2em;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+/* ------------------- */
+/* Modals              */
+/* ------------------- */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    padding: 1.8em;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: visible; /* Wichtig für dynamische Höhenanpassung */
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+/* ------------------- */
+/* Produktsuche        */
+/* ------------------- */
+#product-search-results {
+    display: none; /* Standardmäßig ausblenden */
+    margin-top: 5px;
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1000;
+}
+
+#product-search-results ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#product-search-results li {
+    display: grid !important;
+    grid-template-columns: 50px 1fr auto !important;
+    gap: 10px !important;
+    align-items: center !important;
+    padding: 10px !important;
+    border-bottom: 1px solid #eee !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s;
+}
+
+#product-search-results li:last-child {
+    border-bottom: none;
+}
+
+#product-search-results li:hover {
+    background-color: #f5f5f5;
+}
+
+#product-search-results img {
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px !important;
+    object-fit: cover !important;
+    border-radius: 3px;
+}
+
+#product-search-results .product-name {
+    flex-grow: 1 !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    font-size: 0.9em;
+    margin-right: 10px !important;
+    min-width: 150px !important;
+}
+
+#product-search-results .product-price {
+    font-weight: bold !important;
+    white-space: nowrap !important;
+    text-align: right !important;
+    color: #666;
+    font-size: 0.85em;
+}
+
+#product-search-results .no-results,
+#product-search-results .error {
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#product-search-results .no-results {
+    color: #666;
+}
+
+#product-search-results .error {
+    color: #e53935;
+}
+/* Nur anzeigen, wenn Inhalte vorhanden sind */
+#product-search-results:not(:empty) {
+    display: block;
+}
+
+/* Ausgewähltes Produkt im Modal */
+.selected-product-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #f0f7ff;
+    border: 1px solid #d1e4fd;
+    border-radius: 6px;
+}
+
+.selected-product-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.selected-product-info .product-name {
+    font-weight: 500;
+    color: #333;
+    flex-grow: 1;
+    word-break: break-word; /* Lange Namen umbrechen */
+}
+/* Wenn kein Produkt ausgewählt ist, ausblenden */
+.selected-product-info:empty {
+    display: none;
+}
+
+/* ------------------- */
+/* Benachrichtigungen  */
+/* ------------------- */
+.rental-list-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none;
+}
+
+.rental-list-notification.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.rental-list-notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+/* ------------------- */
+/* "Zu Mietliste hinzufügen"-Button für Produktseiten */
+/* ------------------- */
+.add-to-rental-list-button {
+    /* Positionierung */
+    display: inline-block !important;
+    margin: 10px auto !important;
+    
+    /* Styling - etwas kleiner als der Warenkorb-Button */
+    font-size: 0.9em !important;
+    padding: 0.7em 1em !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    border-radius: 30px !important;
+    text-align: center !important;
+    
+    /* Farben */
+    background-color: #8BC34A !important;
+    color: white !important;
+    border: none !important;
+    
+    /* Schatten für 3D-Effekt */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+    
+    /* Übergang für Hover-Effekt */
+    transition: all 0.3s ease !important;
+    
+    /* Text-Icon für mehr Klarheit */
+    position: relative !important;
+    cursor: pointer !important;
+    
+    /* Wichtig: Gleiche Breite wie der Warenkorb-Button */
+    box-sizing: border-box !important;
+}
+
+/* Herz-Symbol vor dem Text */
+.add-to-rental-list-button:before {
+    content: "♡ " !important;
+    display: inline-block !important;
+    margin-right: 5px !important;
+}
+
+/* Hover-Effekte */
+.add-to-rental-list-button:hover {
+    background-color: #7CB342 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transform: translateY(-2px) !important;
+}
+
+.add-to-rental-list-button:hover:before {
+    content: "❤ " !important;
+}
+
+.add-to-rental-list-button:active {
+    transform: translateY(1px) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Tooltip für zusätzliche Klarheit */
+.add-to-rental-list-button:after {
+    content: "Für später merken, keine Bestellung" !important;
+    position: absolute !important;
+    bottom: 125% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background-color: rgba(51, 51, 51, 0.9) !important;
+    color: white !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    font-size: 0.8em !important;
+    white-space: nowrap !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: all 0.3s ease !important;
+    z-index: 100 !important;
+}
+
+.add-to-rental-list-button:hover:after {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* ------------------- */
+/* Media Queries - Desktop-Anpassungen */
+/* ------------------- */
+@media (min-width: 768px) {
+    .rental-list-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .rental-list-name {
+        margin-bottom: 0;
+    }
+    
+    .rental-list-actions {
+        margin-top: 0;
+    }
+    
+    .rental-list-items .product-thumbnail {
+        display: table-cell;
+    }
+    
+    .rental-list-items .product-thumbnail img {
+        max-width: 50px;
+        height: auto;
+    }
+    
+    .rental-list-items .product-name {
+        width: 30%;
+    }
+    
+    .rental-list-items .product-quantity input {
+        width: 60px;
+        padding: 0.4em;
+    }
+    
+    .rental-list-product-actions {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .rental-list-product-actions button {
+        width: auto;
+    }
+    
+    /* Button auf Produktseiten anpassen für Desktop */
+    .add-to-rental-list-button {
+        width: auto !important;
+        max-width: 80% !important;
+        margin: 10px auto 0 auto !important;
+    }
+    
+    /* Besonders für Flatsome Theme */
+    .product-summary .add-to-rental-list-button {
+        width: 95% !important;
+        max-width: none !important;
+    }
+}
+
+/* WooCommerce spezifische Anpassungen */
+.woocommerce div.product form.cart .add-to-rental-list-button,
+.woocommerce-page div.product form.cart .add-to-rental-list-button {
+    width: auto !important;
+    max-width: none !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.cart .add-to-rental-list-button,
+form.cart .add-to-rental-list-button {
+    margin-top: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Responsive Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .woocommerce-rental-lists {
+        padding: 1.5em;
+    }
+    
+    .rental-list-header {
+        flex-direction: column;
+    }
+    
+    .rental-list-actions {
+        margin-top: 0.8em;
+        justify-content: flex-start;
+    }
+    
+    .rental-list-items th:not(.product-name):not(.product-quantity) {
+        display: none;
+    }
+}
+
+
+.add-single-to-cart.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+/* Verbesserter Einzel-Artikel-Warenkorb-Button */
+.add-single-to-cart {
+    background-color: #8BC34A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}
+
+.add-single-to-cart:hover {
+    background-color: #7CB342;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.add-single-to-cart:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.add-single-to-cart .cart-icon {
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+.product-actions {
+    text-align: center;
+}
+
+.add-single-to-cart,
+.add-list-to-cart {
+    position: relative;
+    padding-left: 2.2em !important;
+    overflow: visible;
+}
+
+.add-single-to-cart:before,
+.add-list-to-cart:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* SVG-Warenkorb-Icon direkt eingebettet (grün) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z'/%3E%3C/svg%3E");
+    transition: transform 0.2s ease;
+}
+
+/* "Alles in den Warenkorb" Button speziell gestalten */
+.add-list-to-cart:before {
+    /* Spezielles Icon für "Alles in den Warenkorb" */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z'/%3E%3C/svg%3E");
+    width: 20px;
+    height: 20px;
+}
+
+/* Animation beim Hover */
+.add-single-to-cart:hover:before,
+.add-list-to-cart:hover:before {
+    transform: translateY(-50%) scale(1.2);
+}
+
+/* Für mobile Ansicht */
+@media (max-width: 768px) {
+    .add-single-to-cart {
+        padding: 5px 10px;
+        font-size: 0.85em;
+    }
+}
