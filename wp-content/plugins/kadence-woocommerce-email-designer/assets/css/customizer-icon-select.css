@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'woomail-social';
-  src:  url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.eot?h4ww1a');
-  src:  url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.eot?h4ww1a#iefix') format('embedded-opentype'),
-    url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.woff2?h4ww1a') format('woff2'),
-    url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.ttf?h4ww1a') format('truetype'),
-    url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.woff?h4ww1a') format('woff'),
-    url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.svg?h4ww1a#woomail-social') format('svg');
+  src:  url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.eot?h4ww1a');
+  src:  url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.eot?h4ww1a#iefix') format('embedded-opentype'),
+    url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.woff2?h4ww1a') format('woff2'),
+    url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.ttf?h4ww1a') format('truetype'),
+    url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.woff?h4ww1a') format('woff'),
+    url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/woomail-social.svg?h4ww1a#woomail-social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -256,11 +256,11 @@ font-size: 24px;
 /* Icons */
 @font-face {
   font-family: 'iconpicker';
-  src: url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.eot?90190138');
-  src: url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.eot?90190138#iefix') format('embedded-opentype'),
-       url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.woff?90190138') format('woff'),
-       url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.ttf?90190138') format('truetype'),
-       url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.svg?90190138#iconpicker') format('svg');
+  src: url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.eot?90190138');
+  src: url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.eot?90190138#iefix') format('embedded-opentype'),
+       url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.woff?90190138') format('woff'),
+       url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.ttf?90190138') format('truetype'),
+       url('https://ces-repo.github.io/wp-content/plugins/kadence-woocommerce-email-designer/assets/css/fonts/iconpicker.svg?90190138#iconpicker') format('svg');
   font-weight: normal;
   font-style: normal;
 }
