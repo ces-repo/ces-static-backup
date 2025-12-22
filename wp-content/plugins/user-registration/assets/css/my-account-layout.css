@@ -802,7 +802,7 @@
 }
 #user-registration .user-registration-MyAccount-content .ur-frontend-form .user-registration-PrivacyTab .ur-form-row .user-registration-form-row .ur-about-your-data-input .ur-field .ur-field-area .ur-field-error::before {
   content: "";
-  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/alert-icon.svg");
+  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/alert-icon.svg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
