@@ -10,7 +10,7 @@
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
   display: block;
   width: 600px;
-  background: white url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/facebook-for-woocommerce/assets/image/small-store.png) no-repeat;
+  background: white url(https://ces-repo.github.io/wp-content/plugins/facebook-for-woocommerce/assets/image/small-store.png) no-repeat;
   background-position-x: 92%;
   background-position-y: 172px;
   background-size: 180px;
@@ -27,7 +27,7 @@
 
 #fbsetup .wrapper .help-center-icon {
   display: inline-block;
-  background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/facebook-for-woocommerce/assets/image/help-center.png);
+  background-image: url(https://ces-repo.github.io/wp-content/plugins/facebook-for-woocommerce/assets/image/help-center.png);
   background-size: 38px 38px;
   background-repeat: no-repeat;
   width: 38px;
@@ -88,7 +88,7 @@
 
 #fbsetup header {
   display: block;
-  background: url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/facebook-for-woocommerce/assets/image/facebook.png) no-repeat #4267B2;
+  background: url(https://ces-repo.github.io/wp-content/plugins/facebook-for-woocommerce/assets/image/facebook.png) no-repeat #4267B2;
   background-position: 20px center;
   background-size: 100px 19px;
   padding: 20px;
