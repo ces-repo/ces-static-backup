@@ -529,8 +529,8 @@
 
 @font-face {
   font-family: "wpmudev-plugin-icons";
-  src: url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.eot);
-  src: url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.eot) format("embedded-opentype"),url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.ttf) format("truetype"),url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.woff) format("woff"),url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.woff2) format("woff2"),url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.svg) format("svg");
+  src: url(https://ces-repo.github.io/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.eot);
+  src: url(https://ces-repo.github.io/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.eot) format("embedded-opentype"),url(https://ces-repo.github.io/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.ttf) format("truetype"),url(https://ces-repo.github.io/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.woff) format("woff"),url(https://ces-repo.github.io/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.woff2) format("woff2"),url(https://ces-repo.github.io/wp-content/plugins/forminator/build/assets/fonts/wpmudev-plugin-icons.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
