@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/tzn-shopkit/assets/fonts/font-awesome/webfonts/fa-brands-400.woff2") format("woff2"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/tzn-shopkit/assets/fonts/font-awesome/webfonts/fa-brands-400.ttf") format("truetype"); }
+  src: url("https://ces-repo.github.io/wp-content/plugins/tzn-shopkit/assets/fonts/font-awesome/webfonts/fa-brands-400.woff2") format("woff2"), url("https://ces-repo.github.io/wp-content/plugins/tzn-shopkit/assets/fonts/font-awesome/webfonts/fa-brands-400.ttf") format("truetype"); }
 
 .fab,
 .fa-brands {
