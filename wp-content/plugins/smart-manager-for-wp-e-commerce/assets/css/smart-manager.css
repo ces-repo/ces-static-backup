@@ -1,5 +1,5 @@
 #icon-smart-manager {
-	background: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/logo-32x32.png") no-repeat scroll transparent;
+	background: url("https://ces-repo.github.io/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/logo-32x32.png") no-repeat scroll transparent;
 }
 
 :root{
@@ -386,11 +386,11 @@ ul.children{list-style:none outside;margin:0px 0 0 24px}
 }
 
 /* #save_sm_editor_grid_btn:hover .save_sm_editor_grid {
-	content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/jqgrid/save_img-white-16X16.png");
+	content: url("https://ces-repo.github.io/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/jqgrid/save_img-white-16X16.png");
 } */
 
 /* #print_invoice_sm_editor_grid_btn:hover .print_invoice_sm_editor_grid {
-	content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/jqgrid/print-white-15x15.png");
+	content: url("https://ces-repo.github.io/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/jqgrid/print-white-15x15.png");
 } */
 
 #sm_products_show_variations, #sm_show_tasks, #sm_view_access_public{
@@ -566,7 +566,7 @@ OVERRIDING JQGRID CSS
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
 	border: 1px solid #ddd;
-	background: #f6f6f6 url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/jqgrid/ui-bg_highlight-soft_100_f6f6f6_1x100.png") 50% 50% repeat-x;
+	background: #f6f6f6 url("https://ces-repo.github.io/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/images/jqgrid/ui-bg_highlight-soft_100_f6f6f6_1x100.png") 50% 50% repeat-x;
 	font-weight: 100;
 	color: #444;
 }
@@ -1644,7 +1644,7 @@ div[aria-describedby="sm_inline_dialog"] {
 
 #sm_beta_json_editor button{
 	background-color: inherit !important;
-	background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/css/jsoneditor/img/jsoneditor-icons.svg)
+	background-image: url(https://ces-repo.github.io/wp-content/plugins/smart-manager-for-wp-e-commerce/assets/css/jsoneditor/img/jsoneditor-icons.svg)
 }
 
 .wp-switch-editor{
