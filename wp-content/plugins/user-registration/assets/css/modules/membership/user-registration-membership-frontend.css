@@ -331,7 +331,7 @@ html {
 }
 .user-registration-membership-content span.urm-help-tip::before {
   content: "";
-  background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg) !important;
+  background-image: url(https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg) !important;
   background-repeat: no-repeat !important;
   background-size: 100% !important;
   display: block;
