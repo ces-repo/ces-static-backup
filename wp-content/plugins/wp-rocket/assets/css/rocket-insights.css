@@ -10,8 +10,8 @@
 \*-----------------------------------------------*/
 @font-face {
   font-family: "wpr-icomoon";
-  src: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/fonts/icomoon.eot");
-  src: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/fonts/icomoon.eot#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/fonts/icomoon.woff") format("woff"), url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/fonts/icomoon.ttf") format("truetype"), url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/fonts/icomoon.svg#icomoon") format("svg");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/fonts/icomoon.eot");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/fonts/icomoon.eot#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/fonts/icomoon.woff") format("woff"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/fonts/icomoon.ttf") format("truetype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -163,59 +163,59 @@
 }
 
 .wpr-icon-heartbeat:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/heartbeat.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/heartbeat.svg");
 }
 
 .wpr-icon-heartbeat-hover:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/heartbeat-hover.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/heartbeat-hover.svg");
 }
 
 .wpr-icon-imagify:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/imagify.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/imagify.svg");
 }
 
 .wpr-icon-imagify-hover:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/imagify-hover.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/imagify-hover.svg");
 }
 
 .wpr-icon-tutorial:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/play.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/play.svg");
 }
 
 .wpr-icon-tutorial-hover:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/play-hover.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/play-hover.svg");
 }
 
 .wpr-icon-tutorial-alt:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/play-alt.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/play-alt.svg");
 }
 
 .wpr-imagify-info:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/imagify-info.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/imagify-info.svg");
 }
 
 .wpr-imagify-install:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/imagify-install.svg");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/imagify-install.svg");
 }
 
 .wpr-icons-plugins:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/plugins.png");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/plugins.png");
 }
 
 .wpr-icons-plugins-hover:before {
-  content: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/plugins-hover.png");
+  content: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/plugins-hover.png");
 }
 
 .wpr-icon-rocket-insights:before {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/rocket-insights.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/rocket-insights.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .wpr-icon-rocket-insights-hover:before {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/rocket-insights-hover.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/rocket-insights-hover.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -236,7 +236,7 @@
 
 .wpr-icon-exclamation:before {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/wp-rocket/assets/img/exclamation.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/wp-rocket/assets/img/exclamation.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
