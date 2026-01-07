@@ -939,16 +939,16 @@
 
 @font-face {
   font-family: "UserRegistration";
-  src: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?nk6vrg");
-  src: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?nk6vrg#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.ttf?nk6vrg") format("truetype"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.woff?nk6vrg") format("woff"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.svg?nk6vrg#UserRegistration") format("svg");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?nk6vrg");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?nk6vrg#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.ttf?nk6vrg") format("truetype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.woff?nk6vrg") format("woff"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.svg?nk6vrg#UserRegistration") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "UserRegistration";
-  src: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f");
-  src: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.ttf?v5p6f") format("truetype"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.woff?v5p6f") format("woff"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.svg?v5p6f#UserRegistration") format("svg");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.ttf?v5p6f") format("truetype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.woff?v5p6f") format("woff"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.svg?v5p6f#UserRegistration") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -3637,7 +3637,7 @@
 .user-registration-page #nav-menu-header .publishing-action .button-secondary .ur-fs-open-label::before,
 .ur-multi-device-form-preview .ur-admin-page-topnav .publishing-action .button-secondary .ur-fs-open-label::before,
 .ur-multi-device-form-preview #nav-menu-header .publishing-action .button-secondary .ur-fs-open-label::before {
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/maximize.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/maximize.svg");
 }
 .user-registration .ur-admin-page-topnav .publishing-action .button-secondary .ur-fs-close-label::before,
 .user-registration #nav-menu-header .publishing-action .button-secondary .ur-fs-close-label::before,
@@ -3645,7 +3645,7 @@
 .user-registration-page #nav-menu-header .publishing-action .button-secondary .ur-fs-close-label::before,
 .ur-multi-device-form-preview .ur-admin-page-topnav .publishing-action .button-secondary .ur-fs-close-label::before,
 .ur-multi-device-form-preview #nav-menu-header .publishing-action .button-secondary .ur-fs-close-label::before {
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/minimize.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/minimize.svg");
 }
 .user-registration #nav-menu-header,
 .user-registration-page #nav-menu-header,
@@ -8497,7 +8497,7 @@ body.ur-multi-device-form-preview #nav-menu-header .major-publishing-actions .pu
   display: block;
   content: "";
   animation: spin 1s ease-in-out infinite;
-  background: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/loader.svg") center center;
+  background: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/loader.svg") center center;
   background-size: cover;
 }
 
@@ -8717,7 +8717,7 @@ body[class*=user-registration-] .wp-editor-wrap, body[class^=ur-] .wp-editor-wra
   display: block;
   content: "";
   animation: spin 1s ease-in-out infinite;
-  background: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/loader.svg") center center;
+  background: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/loader.svg") center center;
   background-size: cover;
 }
 
@@ -9381,7 +9381,7 @@ body[class*=user-registration-] .wp-editor-wrap, body[class^=ur-] .wp-editor-wra
 }
 .ur-registered-from .ur-registered-item.ui-draggable-disabled::before {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/lock-icon.png");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/lock-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -9398,7 +9398,7 @@ body[class*=user-registration-] .wp-editor-wrap, body[class^=ur-] .wp-editor-wra
 }
 .ur-registered-from .ur-registered-item.ui-draggable-disabled.ur-upgradable-field::before {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/ur-pro-icon.png");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/ur-pro-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -9503,7 +9503,7 @@ body[class*=user-registration-] .wp-editor-wrap, body[class^=ur-] .wp-editor-wra
 }
 .ur-registered-from .ur-registered-inputs .ur-tabs .ur-tab-contents .ur-tab-content .form-settings-tab::after {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/ur-right-arrow.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/ur-right-arrow.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -9743,7 +9743,7 @@ body[class*=user-registration-] .wp-editor-wrap, body[class^=ur-] .wp-editor-wra
 }
 .ur-registered-from .ur-registered-inputs .ur-toggle-heading:before {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/ur-arrow-down.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/ur-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -10449,7 +10449,7 @@ img.tips {
 }
 .user-registration-help-tip:not(.no-icon)::after,
 .ur-portal-tooltip:not(.no-icon)::after {
-  background-image: url(https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg) !important;
+  background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg) !important;
   content: "";
   background-repeat: no-repeat !important;
   background-size: 100% !important;
@@ -11337,10 +11337,10 @@ a.button.ur-smart-tags-list-button {
   height: 19px;
 }
 .user-registration-membership_page_user-registration-login-forms .ur-admin-page-topnav .major-publishing-actions .publishing-action .button-secondary .ur-fs-open-label::before {
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/maximize.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/maximize.svg");
 }
 .user-registration-membership_page_user-registration-login-forms .ur-admin-page-topnav .major-publishing-actions .publishing-action .button-secondary .ur-fs-close-label::before {
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/minimize.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/minimize.svg");
 }
 .user-registration-membership_page_user-registration-login-forms .ur-admin-page-topnav .major-publishing-actions .publishing-action .button-primary {
   background: #475bb2;
@@ -11450,11 +11450,11 @@ a.button.ur-smart-tags-list-button {
 }
 .user-registration-membership_page_add-new-registration #nav-menu-header .publishing-action .button-secondary .ur-fs-open-label::before,
 .toplevel_page_user-registration #nav-menu-header .publishing-action .button-secondary .ur-fs-open-label::before {
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/maximize.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/maximize.svg");
 }
 .user-registration-membership_page_add-new-registration #nav-menu-header .publishing-action .button-secondary .ur-fs-close-label::before,
 .toplevel_page_user-registration #nav-menu-header .publishing-action .button-secondary .ur-fs-close-label::before {
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/minimize.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/minimize.svg");
 }
 .user-registration-membership_page_add-new-registration #nav-menu-header .publishing-action .button-primary,
 .toplevel_page_user-registration #nav-menu-header .publishing-action .button-primary {
@@ -13379,8 +13379,8 @@ body.ur-settings-sidebar-hidden .user-registration-settings-sidebar-container {
 
 @font-face {
   font-family: "UserRegistration";
-  src: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f");
-  src: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.ttf?v5p6f") format("truetype"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.woff?v5p6f") format("woff"), url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/fonts/UserRegistration.svg?v5p6f#UserRegistration") format("svg");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f");
+  src: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.eot?v5p6f#iefix") format("embedded-opentype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.ttf?v5p6f") format("truetype"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.woff?v5p6f") format("woff"), url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/fonts/UserRegistration.svg?v5p6f#UserRegistration") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13479,7 +13479,7 @@ body.ur-settings-sidebar-hidden .user-registration-settings-sidebar-container {
 }
 .form-settings-main-tab::after {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/icons/ur-right-arrow.svg");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/icons/ur-right-arrow.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
