@@ -855,7 +855,7 @@
 }
 .user-registration-settings-sidebar-container .user-registration-settings-sidebar__footer--card > p::after {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/pro-banner-highlight.png");
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/pro-banner-highlight.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -1506,7 +1506,7 @@
 }
 .user-registration-settings-container .user-registration-options-container .user-registration-card__body table.ur_emails tbody tr .ur-email-settings-table .user-registration-help-tip::after {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg") !important;
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg") !important;
 }
 .user-registration-settings-container .user-registration-options-container .user-registration-card__body table.ur_emails tbody tr .ur-email-settings-table .ur-toggle-section {
   justify-content: center;
@@ -1565,7 +1565,7 @@
 }
 .user-registration-settings-container .user-registration-options-container .user-registration-card__body .user-registration-global-settings label span.user-registration-help-tip::after {
   content: "";
-  background-image: url("https://ces-repo.github.io/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg") !important;
+  background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/user-registration/assets/images/settings-icons/information.svg") !important;
   background-repeat: no-repeat !important;
   background-size: 100% !important;
   background-position: center;
