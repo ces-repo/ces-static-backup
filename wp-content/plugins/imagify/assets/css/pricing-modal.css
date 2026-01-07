@@ -37,7 +37,7 @@
 .imagify-modal-loader {
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
-	background: #fff url('https://ces-repo.github.io/wp-content/plugins/imagify/assets/images/loader-balls.svg') center no-repeat;
+	background: #fff url('https://ces-repo.github.io/ces-static-backup/wp-content/plugins/imagify/assets/images/loader-balls.svg') center no-repeat;
 	z-index: 10;
 }
 .imagify-payment-modal .imagify-modal-content {
@@ -848,12 +848,12 @@ div.imagify-col-price {
 	position: absolute;
 	top: 7px; left: -35px;
 	width: 29px; height: 30px;
-	background: url("https://ces-repo.github.io/wp-content/plugins/imagify/assets/images/icon-arrow-choice.png") scroll 0 no-repeat;
+	background: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/imagify/assets/images/icon-arrow-choice.png") scroll 0 no-repeat;
 	background-size: contain;
 }
 @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 	.imagify-recommend:before {
-		background-image: url("https://ces-repo.github.io/wp-content/plugins/imagify/assets/images/icon-arrow-choice.svg");
+		background-image: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/imagify/assets/images/icon-arrow-choice.svg");
 	}
 }
 
@@ -890,7 +890,7 @@ div.imagify-col-price {
 	position: absolute;
 	bottom: 0; right: 25px;
 	width: 75px; height: 54px;
-	background: url("https://ces-repo.github.io/wp-content/plugins/imagify/assets/images/icon-pack.png");
+	background: url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/imagify/assets/images/icon-pack.png");
 }
 .imagify-offer-line[class*="imagify-onetime-"] .imagify-col-other-actions {
 	width: 30%;
@@ -1127,7 +1127,7 @@ p.imagify-modal-sidebar-title.imagify-modal-sidebar-title {
 #imagify-payment-iframe {
 	width: 980px;
 	height: 672px;
-	background: #f6f7fb url(https://ces-repo.github.io/wp-content/plugins/imagify/assets/images/loader-balls.svg) 50% 50% no-repeat;
+	background: #f6f7fb url(https://ces-repo.github.io/ces-static-backup/wp-content/plugins/imagify/assets/images/loader-balls.svg) 50% 50% no-repeat;
 }
 
 .imagify-success-view {

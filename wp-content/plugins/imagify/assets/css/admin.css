@@ -211,7 +211,7 @@ body.imagify-modal-is-open {
 	height: 20px;
 	margin-right: 5px;
 	vertical-align: middle;
-	background: rgba(0, 0, 0, 0) url("https://ces-repo.github.io/wp-content/plugins/imagify/assets/images/spinner.gif") no-repeat scroll 0 0 / 20px 20px;
+	background: rgba(0, 0, 0, 0) url("https://ces-repo.github.io/ces-static-backup/wp-content/plugins/imagify/assets/images/spinner.gif") no-repeat scroll 0 0 / 20px 20px;
 	opacity: 0.7;
 }
 .spinner.imagify-hidden {
