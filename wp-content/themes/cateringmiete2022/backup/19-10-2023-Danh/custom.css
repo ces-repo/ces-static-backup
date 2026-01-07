@@ -10,7 +10,7 @@ body.woocommerce-checkout .checkout .wc_payment_method .card,
 }
 .header-nav-main .yith-woocompare-counter .yith-woocompare-icon::after{
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2023/02/Vergleichen-Icon.svg) no-repeat center / auto;
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2023/02/Vergleichen-Icon.svg) no-repeat center / auto;
 	    width: 20px;
     height: 20px;
     display: block;
@@ -95,7 +95,7 @@ input#additional_abholdatum,
 input#additional_ruckgabedatum,
 input#additional_date_from_liefer,
 #additional_date_to_liefer {
-    background-image: url(https://ces-repo.github.io/wp-content/themes/cateringmiete2022/backup/images/date-icon.svg);
+    background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/backup/images/date-icon.svg);
     background-position: 90% center;
     background-size: 17px;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ body.woocommerce-checkout .checkout .shipping-methods.card .card-content li>inpu
 body.woocommerce-checkout .checkout .shipping-methods.card .card-content li>label {
     display: block;
     padding: 20px;
-    background-image: url(https://ces-repo.github.io/wp-content/themes/cateringmiete2022/backup/images/rechnung.svg);
+    background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/backup/images/rechnung.svg);
     background-position: 28px center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -186,11 +186,11 @@ body.woocommerce-checkout .checkout .shipping-methods.card .card-content li>labe
 }
 
 body.woocommerce-checkout .checkout .shipping-methods.card .card-content #shipping_method_0_distance_rate5+label {
-    background-image: url(https://ces-repo.github.io/wp-content/themes/cateringmiete2022/backup/images/rechnung.svg);
+    background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/backup/images/rechnung.svg);
 }
 
 body.woocommerce-checkout .checkout .shipping-methods.card .card-content #shipping_method_0_local_pickup2+label {
-    background-image: url(https://ces-repo.github.io/wp-content/themes/cateringmiete2022/backup/images/selbstabholung.svg);
+    background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/backup/images/selbstabholung.svg);
 }
 
 body.woocommerce-checkout .checkout .shipping-methods.card .card-content li input:checked+label {
@@ -296,7 +296,7 @@ textarea#order_comments {
     padding-left: 16px;
 }
 #additional_note_order_comment_field:before {
-    background-image: url(https://ces-repo.github.io/wp-content/themes/cateringmiete2022/backup/images/info-icon.png);
+    background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/backup/images/info-icon.png);
     background-repeat: no-repeat;
     position: absolute;
     content: "";
@@ -403,7 +403,7 @@ body.woocommerce-checkout .checkout .order-review .card {
 }
 
 .widget_shopping_cart .widget_shopping_cart_content .woocommerce-mini-cart__buttons.buttons>a.checkout::after {
-    background-image: url(https://ces-repo.github.io/wp-content/uploads/2022/02/path9413.png);
+    background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/path9413.png);
     content: '';
     display: inline-block;
     width: 11px;
@@ -719,10 +719,10 @@ p#billing_country_field span.select2.select2-container {
 }
 
 .archive .faq-accordions .faq-title .accordion-title .toggle:before {
-    background-image: url('https://ces-repo.github.io/wp-content/themes/cateringmiete2022/backup/images/plus.svg');
+    background-image: url('https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/backup/images/plus.svg');
 }
 .archive .faq-accordions .faq-title .accordion-title .toggle:after{
-    background-image: url('https://ces-repo.github.io/wp-content/themes/cateringmiete2022/backup/images/minus.svg');
+    background-image: url('https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/backup/images/minus.svg');
 }
 textarea#billing_weitere_anmerkungen, textarea#shipping_order_comments {
     height: 90px;

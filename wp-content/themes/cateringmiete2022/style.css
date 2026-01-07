@@ -16,7 +16,7 @@ Version: 3.0
 Custom CSS */
 @font-face {
     font-family: Barlow;
-    src: url('https://ces-repo.github.io/wp-content/themes/cateringmiete2022/fonts/Barlow-Regular.ttf');
+    src: url('https://ces-repo.github.io/ces-static-backup/wp-content/themes/cateringmiete2022/fonts/Barlow-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -72,7 +72,7 @@ h2 {
 	content: '';
 	position: absolute;
 	right: 20px;
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/layer1.svg);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/layer1.svg);
 	width: 12px;
 	height: 6px;
 	top: 50%;
@@ -152,7 +152,7 @@ a.button.btn-style1:hover {
 	position: absolute;
 	width: 11px;
 	height: 6px;
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/arrow-white.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/arrow-white.png);
 	top: 50%;
 	transform: translateY(-50%);
 	margin-left: 10px;
@@ -279,7 +279,7 @@ a.button.btn-style1:hover {
 	content: '';
 	width: 11px;
 	height: 6px;
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/12/arrow.svg) no-repeat center / contain;
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/12/arrow.svg) no-repeat center / contain;
 	display: inline-block;
 }
 #masthead .cart-item .header-cart-link i{
@@ -345,7 +345,7 @@ a.button.btn-style1:hover {
 
 .header-nav-main .header-button-2 .button:after {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/Vergleichen-Icon.svg);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/Vergleichen-Icon.svg);
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -563,7 +563,7 @@ div.product.type-product>.col-inner .price-wrapper{
 	width: 20px;
 	transform: translate(-50%, -50%);
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/cate-icon.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/cate-icon.png);
 	height: 10px;
 	background-repeat: no-repeat;
 }
@@ -594,7 +594,7 @@ div.product.type-product>.col-inner .price-wrapper{
 .products .product-small .box-text .add_to_cart_button .fa-cart:before {
 	/*     content: '\f178'; */
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/cate-icon.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/cate-icon.png);
 	width: 20px;
 	height: 10px;
 	background-repeat: no-repeat;
@@ -618,7 +618,7 @@ div.product.type-product>.col-inner .price-wrapper{
 
 .header-nav-main .header-wishlist-icon .wishlist-link .icon-heart:before {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/heart-icon.svg);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/heart-icon.svg);
 	width: 21px;
 	height: 21px;
 	position: absolute;
@@ -695,7 +695,7 @@ div.product.type-product>.col-inner .price-wrapper span.amount {
 .favourite-article-sec .product .compare.button:before,
 .product .compare.button:before {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/comparison.svg);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/comparison.svg);
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -842,7 +842,7 @@ div.product.type-product>.col-inner .price-wrapper span.amount {
 	height: 2px;
 	width: 88px;
 	top: 50%;
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/shape-dashed.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/shape-dashed.png);
 	background-repeat: repeat;
 }
 
@@ -864,7 +864,7 @@ div.product.type-product>.col-inner .price-wrapper span.amount {
 	top: 10px;
 	left: 50%;
 	transform: translateY(50%);
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/shape-dashed-horizontal.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/shape-dashed-horizontal.png);
 	background-repeat: repeat;
 }
 
@@ -1152,10 +1152,10 @@ Newsletter Section
 }
 
 .whatsapp-icon-wrap .fa-whatsapp:before {
-    content: url(https://ces-repo.github.io/wp-content/uploads/2023/02/whatapp.png);
+    content: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2023/02/whatapp.png);
 }
 .whatsapp-icon-wrap .icon:hover .fa-whatsapp:before{
-	content: url(https://ces-repo.github.io/wp-content/uploads/2023/02/whatapp-hover.png);
+	content: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2023/02/whatapp-hover.png);
 }
 .whatsapp-icon-wrap .icon:hover {
 	background-color: #17B14B;
@@ -1267,7 +1267,7 @@ nav.breadcrumbs.checkout-breadcrumbs.text-center.h2.uppercase {
 .register-form-outer button.btn.button.ur-submit-button:after,
 .sign-up-page #customer_login .woocommerce-button:after {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/path9413.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/path9413.png);
 	width: 11px;
 	height: 6px;
 	position: absolute;
@@ -1584,7 +1584,7 @@ div#shop-sidebar .widget {
 .widget.yith-woocompare-widget .widget-title:before,
 .sidebar-wrapper .aside-widget-wishlist .widget-title:before {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/whistlist-black.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/whistlist-black.png);
 	width: 21px;
 	;
 	height: 20px;
@@ -1592,7 +1592,7 @@ div#shop-sidebar .widget {
 }
 
 .sidebar-wrapper .aside-widget-wishlist .widget-title:before {
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/03/wishlist-icon.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/wishlist-icon.png);
 }
 
 .widget.yith-woocompare-widget .is-divider,
@@ -2014,7 +2014,7 @@ a.button.circle.icon.button.product-video-popup {
 
 .single .product-summary .single_add_to_cart_button:after {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/path9413.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/path9413.png);
 	width: 11px;
 	height: 6px;
 	position: absolute;
@@ -2107,7 +2107,7 @@ a.button.circle.icon.button.product-video-popup {
 
 .product-summary .yith-wcwl-add-button .add_to_wishlist .yith-wcwl-icon:before {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/heart-icon.svg);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/heart-icon.svg);
 	width: 21px;
 	height: 21px;
 	position: absolute;
@@ -2237,7 +2237,7 @@ a.button.circle.icon.button.product-video-popup {
 	width: 16px;
 	height: 16px;
 	border: none;
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/03/remove-icon.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/remove-icon.png);
 }
 
 .cart-sidebar .widget-total {
@@ -2506,7 +2506,7 @@ a.button.circle.icon.button.product-video-popup {
 
 .place_order-wrap .button:after {
 	content: '';
-	background: url(https://ces-repo.github.io/wp-content/uploads/2022/02/path9413.png);
+	background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/path9413.png);
 	width: 11px;
 	height: 6px;
 	position: absolute;
@@ -4111,7 +4111,7 @@ ul.ct-dropdown:before {
 		min-width: auto;
 		background: transparent;
 		position: relative;
-		background-image: url(https://ces-repo.github.io/wp-content/uploads/2022/03/cart-icon.png);
+		background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/cart-icon.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		width: 25px;
@@ -4311,7 +4311,7 @@ ul.ct-dropdown:before {
 	}
 	.mobile-sidebar > .sidebar-menu > ul > li.custom.html_topbar_right span.yith-woocompare-icon:before {
 		content: '';
-		background: url(https://ces-repo.github.io/wp-content/uploads/2023/02/Vergleichen-Icon.svg) no-repeat center / auto;
+		background: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2023/02/Vergleichen-Icon.svg) no-repeat center / auto;
 		width: 20px;
 		height: 20px;
 		display: block;
@@ -4590,7 +4590,7 @@ ul.ct-dropdown:before {
 		min-width: auto;
 		background: transparent;
 		position: relative;
-		background-image: url(https://ces-repo.github.io/wp-content/uploads/2022/03/cart-icon.png);
+		background-image: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/cart-icon.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		width: 25px;
@@ -4772,7 +4772,7 @@ textarea {
 
 .primary-btn.checkout-btn {
 	color: #fff !important;
-	background-image: url('https://ces-repo.github.io/wp-content/uploads/2022/03/arrow-white.png');
+	background-image: url('https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/arrow-white.png');
 	background-repeat: no-repeat;
 	background-position: 70% center;
 	background-color: var(--primary) !important;
@@ -4870,13 +4870,13 @@ body.woocommerce-checkout #billing label {
     color: var(--white) !important;
 }
 .contact-section .forminator-ui .forminator-button::after {
-    content: url(https://ces-repo.github.io/wp-content/uploads/2022/02/green-arrow.png);
+    content: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/green-arrow.png);
     position: relative;
     top: -1px;
     margin-left: 10px;
 }
 .contact-section .forminator-ui .forminator-button:hover::after {
-    content: url(https://ces-repo.github.io/wp-content/uploads/2022/12/arrow.svg);
+    content: url(https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/12/arrow.svg);
 }
 /* Occasionsverkauf Menüpunkt hervorheben */
 .menu-item-verkauf .nav-top-link {
