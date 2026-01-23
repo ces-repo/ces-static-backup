@@ -1,0 +1,12 @@
+<svg id="Uhr_Icon" data-name="Uhr Icon" xmlns="http://www.w3.org/2000/svg" width="20.016" height="20.016" viewBox="0 0 20.016 20.016">
+  <g id="Group_132" data-name="Group 132">
+    <g id="Group_131" data-name="Group 131">
+      <path id="Path_70" data-name="Path 70" d="M10.008,0A10.008,10.008,0,1,0,20.016,10.008,10.02,10.02,0,0,0,10.008,0Zm0,19.146a9.138,9.138,0,1,1,9.138-9.138A9.148,9.148,0,0,1,10.008,19.146Z" fill="#707070"/>
+    </g>
+  </g>
+  <g id="Group_134" data-name="Group 134" transform="translate(9.573 2.611)">
+    <g id="Group_133" data-name="Group 133">
+      <path id="Path_71" data-name="Path 71" d="M239.325,75.006l-3.789-3.789V64.435a.435.435,0,1,0-.87,0V71.4a.438.438,0,0,0,.127.308l3.916,3.916a.435.435,0,0,0,.616-.615Z" transform="translate(-234.666 -64)" fill="#707070"/>
+    </g>
+  </g>
+</svg>
