@@ -1,0 +1,27 @@
+<svg id="Fax_Icon" data-name="Fax Icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group_97" data-name="Group 97" transform="translate(0 6.712)">
+    <g id="Group_96" data-name="Group 96">
+      <path id="Path_52" data-name="Path 52" d="M17.083,170.667H2.917A2.908,2.908,0,0,0,0,173.56v4.96a1.247,1.247,0,0,0,1.25,1.24H4.583a.413.413,0,1,0,0-.827H1.25a.415.415,0,0,1-.417-.413v-4.96a2.078,2.078,0,0,1,2.083-2.067H17.083a2.078,2.078,0,0,1,2.083,2.067v4.96a.415.415,0,0,1-.417.413H15.417a.413.413,0,1,0,0,.827H18.75A1.247,1.247,0,0,0,20,178.52v-4.96A2.908,2.908,0,0,0,17.083,170.667Z" transform="translate(0 -170.667)" fill="#707070"/>
+    </g>
+  </g>
+  <g id="Group_99" data-name="Group 99" transform="translate(4.213 11.733)">
+    <g id="Group_98" data-name="Group 98">
+      <path id="Path_53" data-name="Path 53" d="M117.826,298.667H107.079a.414.414,0,0,0-.413.413v7.44a.414.414,0,0,0,.413.413h10.747a.414.414,0,0,0,.413-.413v-7.44A.413.413,0,0,0,117.826,298.667Zm-.413,7.44h-9.92v-6.613h9.92Z" transform="translate(-106.666 -298.667)" fill="#707070"/>
+    </g>
+  </g>
+  <g id="Group_101" data-name="Group 101" transform="translate(4.213)">
+    <g id="Group_100" data-name="Group 100">
+      <path id="Path_54" data-name="Path 54" d="M117.826,0H107.079a.414.414,0,0,0-.413.413V7.027a.414.414,0,0,0,.413.413h10.747a.414.414,0,0,0,.413-.413V.413A.413.413,0,0,0,117.826,0Zm-.413,6.613h-9.92V.827h9.92Z" transform="translate(-106.666)" fill="#707070"/>
+    </g>
+  </g>
+  <g id="Group_103" data-name="Group 103" transform="translate(5.867 16.693)">
+    <g id="Group_102" data-name="Group 102">
+      <path id="Path_55" data-name="Path 55" d="M157.186,426.667h-7.44a.413.413,0,1,0,0,.827h7.44a.413.413,0,1,0,0-.827Z" transform="translate(-149.333 -426.667)" fill="#707070"/>
+    </g>
+  </g>
+  <g id="Group_105" data-name="Group 105" transform="translate(5.867 14.172)">
+    <g id="Group_104" data-name="Group 104">
+      <path id="Path_56" data-name="Path 56" d="M157.186,362.667h-7.44a.413.413,0,0,0,0,.827h7.44a.413.413,0,1,0,0-.827Z" transform="translate(-149.333 -362.667)" fill="#707070"/>
+    </g>
+  </g>
+</svg>
