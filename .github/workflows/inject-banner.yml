@@ -1,0 +1,57 @@
+name: Inject Failover Banner
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  inject-banner:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Inject banner into all HTML files
+        run: |
+          BANNER='<!-- Failover Banner -->
+          <style>
+            .failover-banner {
+              position: fixed;
+              top: 0; left: 0; right: 0;
+              background: linear-gradient(135deg, #c62828 0%, #8e0000 100%);
+              color: white;
+              padding: 14px 20px;
+              text-align: center;
+              z-index: 999999;
+              font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;
+              font-size: 15px;
+              font-weight: 500;
+              box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            }
+            .failover-banner a { color: white; text-decoration: underline; }
+            body { padding-top: 52px !important; }
+          </style>
+          <div class="failover-banner">
+            ⚠️ Wartungsmodus – Bestellungen derzeit nicht möglich \&nbsp;|\&nbsp;
+            📞 <a href=\"tel:+41447307070\">044 730 70 70</a> \&nbsp;|\&nbsp;
+            ✉️ <a href=\"mailto:anfrage@catering-miete.ch\">anfrage@catering-miete.ch</a>
+          </div>
+          <!-- /Failover Banner -->'
+          
+          # Find all HTML files and inject banner after <body>
+          find . -name "*.html" -type f | while read file; do
+            if ! grep -q "failover-banner" "$file"; then
+              sed -i "s/<body[^>]*>/&\n$BANNER/" "$file"
+              echo "Injected: $file"
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto-inject failover banner"
+          git push
