@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<title>Weiterleiten&#160;&hellip;</title>
-		<meta http-equiv="refresh" content="0;url=.//sitemap_index.xml">
+		<meta http-equiv="refresh" content="0;url=https://ces-repo.github.io/ces-static-backup/sitemap_index.xml">
 	</head>
 	<body>
 		<script type="text/javascript">
-			window.location = ".//sitemap_index.xml";
+			window.location = "https://ces-repo.github.io/ces-static-backup/sitemap_index.xml";
 		</script>
 
-		<p>Sie werden auf <a href=".//sitemap_index.xml">.//sitemap_index.xml</a> weitergeleitet</p>
+		<p>Sie werden auf <a href="https://ces-repo.github.io/ces-static-backup/sitemap_index.xml">https://ces-repo.github.io/ces-static-backup/sitemap_index.xml</a> weitergeleitet</p>
 	</body>
 </html>
