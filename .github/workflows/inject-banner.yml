@@ -1,4 +1,4 @@
-name: Inject Failover Banner
+name: Prepare Failover Backup
 
 on:
   push:
@@ -6,52 +6,92 @@ on:
       - main
 
 jobs:
-  inject-banner:
+  prepare-backup:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Inject banner into all HTML files
+      - name: Inject banner and modify buttons
         run: |
-          BANNER='<!-- Failover Banner -->
-          <style>
-            .failover-banner {
-              position: fixed;
-              top: 0; left: 0; right: 0;
-              background: linear-gradient(135deg, #c62828 0%, #8e0000 100%);
-              color: white;
-              padding: 14px 20px;
-              text-align: center;
-              z-index: 999999;
-              font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;
-              font-size: 15px;
-              font-weight: 500;
-              box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            }
-            .failover-banner a { color: white; text-decoration: underline; }
-            body { padding-top: 52px !important; }
-          </style>
-          <div class="failover-banner">
-            ⚠️ Wartungsmodus – Bestellungen derzeit nicht möglich \&nbsp;|\&nbsp;
-            📞 <a href=\"tel:+41447307070\">044 730 70 70</a> \&nbsp;|\&nbsp;
-            ✉️ <a href=\"mailto:anfrage@catering-miete.ch\">anfrage@catering-miete.ch</a>
-          </div>
-          <!-- /Failover Banner -->'
+          # Banner HTML
+          BANNER='<!-- Failover Banner --><style>.failover-banner{position:fixed;top:0;left:0;right:0;background:linear-gradient(135deg,#c62828 0%,#8e0000 100%);color:#fff;padding:14px 20px;text-align:center;z-index:999999;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:15px;font-weight:500;box-shadow:0 2px 10px rgba(0,0,0,.3)}.failover-banner a{color:#fff;text-decoration:underline}body{padding-top:52px!important}</style><div class="failover-banner">⚠️ Wartungsmodus – Bestellungen derzeit nicht möglich \&nbsp;|\&nbsp; 📞 <a href="tel:+41447307070">044 730 70 70</a> \&nbsp;|\&nbsp; ✉️ <a href="mailto:anfrage@catering-miete.ch">anfrage@catering-miete.ch</a></div><!-- /Failover Banner -->'
           
-          # Find all HTML files and inject banner after <body>
+          # JavaScript für Button-Ersetzung und Warenkorb-Blocking
+          SCRIPT='<!-- Failover Script -->
+          <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            // "In den Warenkorb" Buttons ersetzen
+            var cartBtns = document.querySelectorAll(".add_to_cart_button, .single_add_to_cart_button, .ajax_add_to_cart, [class*=\"add-to-cart\"], button[name=\"add-to-cart\"]");
+            cartBtns.forEach(function(btn) {
+              btn.disabled = true;
+              btn.style.opacity = "0.5";
+              btn.style.cursor = "not-allowed";
+              btn.innerHTML = "☎️ Telefonisch bestellen";
+              btn.onclick = function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                alert("Unser Shop ist gerade in Wartung.\\n\\nFür Bestellungen rufen Sie uns an:\\n📞 044 730 70 70\\n\\nOder per E-Mail:\\n✉️ anfrage@catering-miete.ch");
+                return false;
+              };
+            });
+            
+            // Warenkorb-Links abfangen
+            var cartLinks = document.querySelectorAll("a[href*=\"/cart\"], a[href*=\"/warenkorb\"], a[href*=\"/checkout\"], a[href*=\"/kasse\"]");
+            cartLinks.forEach(function(link) {
+              link.onclick = function(e) {
+                e.preventDefault();
+                alert("Der Warenkorb ist während der Wartung nicht verfügbar.\\n\\n📞 044 730 70 70\\n✉️ anfrage@catering-miete.ch");
+                return false;
+              };
+            });
+            
+            // Mengen-Inputs deaktivieren
+            var qtyInputs = document.querySelectorAll("input.qty, input[name=\"quantity\"]");
+            qtyInputs.forEach(function(input) {
+              input.disabled = true;
+            });
+          });
+          </script>
+          <!-- /Failover Script -->'
+          
+          # Zähler
+          MODIFIED=0
+          
+          # Alle HTML-Dateien durchgehen
           find . -name "*.html" -type f | while read file; do
+            CHANGED=false
+            
+            # Banner einfügen (falls nicht vorhanden)
             if ! grep -q "failover-banner" "$file"; then
               sed -i "s/<body[^>]*>/&\n$BANNER/" "$file"
-              echo "Injected: $file"
+              CHANGED=true
+            fi
+            
+            # Script einfügen (falls nicht vorhanden)
+            if ! grep -q "Failover Script" "$file"; then
+              sed -i "s|</body>|$SCRIPT\n</body>|" "$file"
+              CHANGED=true
+            fi
+            
+            if [ "$CHANGED" = true ]; then
+              echo "✓ Modified: $file"
+              MODIFIED=$((MODIFIED + 1))
             fi
           done
+          
+          echo "---"
+          echo "Total files modified: $MODIFIED"
 
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff --staged --quiet || git commit -m "Auto-inject failover banner"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🛠️ Auto-prepare failover (banner + buttons)"
+            git push
+          fi
