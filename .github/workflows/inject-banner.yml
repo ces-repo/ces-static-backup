@@ -21,7 +21,7 @@ jobs:
           <div id="failover-banner" style="position:fixed;top:0;left:0;right:0;background:#dc2626;color:white;padding:12px;text-align:center;z-index:99999;font-family:sans-serif;font-size:14px;">
             <strong>⚠️ Wartungsmodus</strong> – Online-Bestellung aktuell nicht möglich. 
             <a href="tel:+41445085000" style="color:white;text-decoration:underline;">☎️ +41 44 508 50 00</a> · 
-            <a href="mailto:info@catering-miete.ch" style="color:white;text-decoration:underline;">✉️ info@catering-miete.ch</a>
+            <a href="mailto:anfrage@catering-miete.ch" style="color:white;text-decoration:underline;">✉️ anfrage@catering-miete.ch</a>
           </div>
           <script>document.body.style.paddingTop="60px";</script>
           BANNEREOF
