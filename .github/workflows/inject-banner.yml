@@ -45,12 +45,12 @@ jobs:
           
           # Process all HTML files
           find . -name "*.html" -type f | while read file; do
-            # Skip if already has banner
             # Remove old banner if exists
-if grep -q "failover-banner\|wartungsmodus" "$file"; then
-  echo "🔄 Replace existing banner: $file"
-  sed -i '/<div id="failover-banner"/,/<\/div>/d; /<div id="wartungsmodus"/,/<\/div>/d' "$file"
-fi
+            if grep -q "failover-banner\|wartungsmodus" "$file"; then
+              echo "🔄 Replace existing banner: $file"
+              sed -i '/<div id="failover-banner"/,/<\/div>/d; /<div id="wartungsmodus"/,/<\/div>/d' "$file"
+            fi
+            
             
             # Check if file has <body tag
             if grep -q "<body" "$file"; then
