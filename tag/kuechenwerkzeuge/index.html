@@ -2171,9 +2171,10 @@ display:none;
 <body data-cmplz="1" class="archive tag tag-kuechenwerkzeuge tag-622 wp-theme-flatsome wp-child-theme-cateringmiete2022 theme-flatsome user-registration-page ur-settings-sidebar-show woocommerce-no-js tzn-shopkit-3.0.78 full-width lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border mobile-submenu-toggle">
 <div id="failover-banner" style="position:fixed;top:0;left:0;right:0;background:#dc2626;color:white;padding:12px;text-align:center;z-index:99999;font-family:sans-serif;font-size:14px;">
   <strong>⚠️ Wartungsmodus</strong> – Online-Bestellung aktuell nicht möglich. 
-  <a href="tel:+41445085000" style="color:white;text-decoration:underline;">☎️ +41 44 508 50 00</a> · 
-  <a href="mailto:info@catering-miete.ch" style="color:white;text-decoration:underline;">✉️ info@catering-miete.ch</a>
+  <a href="tel:+41447307070" style="color:white;text-decoration:underline;">☎️ +41 44 730 70 70</a> · 
+  <a href="mailto:anfrage@catering-miete.ch" style="color:white;text-decoration:underline;">✉️ anfrage@catering-miete.ch</a>
 </div>
+<script>document.body.style.paddingTop="60px";</script>
 <script>document.body.style.paddingTop="60px";</script>
 	<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK4FTXV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -5675,6 +5676,17 @@ document.addEventListener('DOMContentLoaded',function(){
   });
   document.querySelectorAll('a[href*="cart"], a[href*="checkout"], a[href*="warenkorb"], a[href*="kasse"]').forEach(function(a){
     a.addEventListener('click',function(e){e.preventDefault();alert('Bestellung aktuell nur telefonisch: +41 44 508 50 00');});
+  });
+  document.querySelectorAll('input.qty, input[name="quantity"]').forEach(function(i){i.disabled=true;});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.single_add_to_cart_button, .add_to_cart_button').forEach(function(b){
+    b.outerHTML='<a href="tel:+41447307070" style="background:#059669;color:white;padding:12px 24px;border-radius:4px;text-decoration:none;display:inline-block;">☎️ Telefonisch bestellen</a>';
+  });
+  document.querySelectorAll('a[href*="cart"], a[href*="checkout"], a[href*="warenkorb"], a[href*="kasse"]').forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault();alert('Bestellung aktuell nur telefonisch: +41 44 730 70 70');});
   });
   document.querySelectorAll('input.qty, input[name="quantity"]').forEach(function(i){i.disabled=true;});
 });
