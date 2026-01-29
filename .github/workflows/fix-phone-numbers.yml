@@ -1,0 +1,33 @@
+name: Fix Phone Numbers in Buttons
+on:
+  workflow_dispatch:
+jobs:
+  fix-buttons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      
+      - name: Fix all phone numbers in buttons
+        run: |
+          echo "Fixing phone numbers in all HTML files..."
+          
+          # Find and replace old phone number with correct one in button scripts
+          find . -name "*.html" -type f -exec sed -i 's|href="tel:+41[0-9]\{9\}"|href="tel:+41447307070"|g' {} \;
+          
+          # Also fix in alert messages
+          find . -name "*.html" -type f -exec sed -i "s|nur telefonisch: +41 [0-9 ]\{13\}|nur telefonisch: +41 44 730 70 70|g" {} \;
+          
+          echo "Phone number fix complete!"
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "🔧 Fix phone numbers in buttons"
+            git push
+          else
+            echo "No changes to commit"
