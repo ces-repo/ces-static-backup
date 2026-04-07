@@ -2156,6 +2156,7 @@ display:none;
 <script>document.body.style.paddingTop="60px";</script>
 <script>document.body.style.paddingTop="60px";</script>
 <script>document.body.style.paddingTop="60px";</script>
+<script>document.body.style.paddingTop="60px";</script>
 	<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK4FTXV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -6809,6 +6810,17 @@ document.addEventListener('DOMContentLoaded',function(){
   });
   document.querySelectorAll('a[href*="cart"], a[href*="checkout"], a[href*="warenkorb"], a[href*="kasse"]').forEach(function(a){
     a.addEventListener('click',function(e){e.preventDefault();alert('Bestellung aktuell nur telefonisch: +41 44 508 50 00');});
+  });
+  document.querySelectorAll('input.qty, input[name="quantity"]').forEach(function(i){i.disabled=true;});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.single_add_to_cart_button, .add_to_cart_button').forEach(function(b){
+    b.outerHTML='<a href="tel:+41447307070" style="background:#059669;color:white;padding:12px 24px;border-radius:4px;text-decoration:none;display:inline-block;">☎️ Telefonisch bestellen</a>';
+  });
+  document.querySelectorAll('a[href*="cart"], a[href*="checkout"], a[href*="warenkorb"], a[href*="kasse"]').forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault();alert('Bestellung aktuell nur telefonisch: +41 44 730 70 70');});
   });
   document.querySelectorAll('input.qty, input[name="quantity"]').forEach(function(i){i.disabled=true;});
 });
