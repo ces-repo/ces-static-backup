@@ -92,4 +92,4 @@ jobs:
           git config --local http.postBuffer 524288000
           git add -A
           git diff --staged --quiet || git commit -m "🔧 Auto-inject failover banner + button blocking [skip ci]"
-          git push --no-thin --force
+          git push origin gh-pages --no-thin --force
