@@ -1,0 +1,177 @@
+/*Mac book Screens*/
+@media (min-width: 550px) and (max-width: 1024px) {
+    .aside-widget-wishlist .wishlist_table li {
+        margin-left: 0;
+        padding-left: 23px !important;
+    }
+    .wishlist_table.mobile li .item-wrapper .product-thumbnail {
+        margin-right: 0;
+    }
+    .aside-widget-wishlist .wishlist_table .additional-info .label {
+        margin-left: 0;
+        display: block;
+    }
+    .wishlist_table.mobile li .item-wrapper .item-details {
+        width: 100%;
+    }
+    .wishlist_table.mobile li .item-wrapper .product-thumbnail {
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .categories-section .large-4 .title-text-block-ctm {
+        min-height: 306px !important;
+    }
+    .lg-img-cate {
+        height: 610px !important;
+    }
+    .lg-img-cate .image-cover {
+        padding-top: 610px !important;
+    }
+    .testimonial-slider .flickity-prev-next-button.previous {
+        left: 83px;
+    }
+    .testimonial-slider .flickity-prev-next-button.next {
+        right: 84px;
+    }
+}
+@media (max-width: 1024px) {
+    .product-compare .product_left-data .product-gap {
+        height: 330px !important;
+    }
+    .product-sku-wrap .table-text {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .no-padding-tablet{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .product-sku-wrap {
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .company-img-col .col-inner {
+        padding-left: 0 !important;
+        padding-right: 50px;
+    }
+    body.woocommerce-checkout .checkout .card {
+        margin-bottom: 300px;
+    }
+}
+
+/* 1366px */
+
+@media (min-width: 1025px) and (max-width: 1370px) {
+    .testimonial-slider .flickity-prev-next-button.previous {
+        left: 46px;
+    }
+    .testimonial-slider .flickity-prev-next-button.next {
+        right: 46px;
+    }
+}
+
+/* 1280px */
+
+@media (min-width: 1025px) and (max-width: 1285px) {
+    .categories-section .large-4 .title-text-block-ctm {
+        min-height: 286px;
+    }
+    .categories-section .col-inner div.lg-img-cate .image-cover {
+        padding-top: 575px !important;
+    }
+    .categories-section .col-inner div.lg-img-cate {
+        height: 575px !important;
+    }
+    .featured-box .request-card-desc h3 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .offer-section-wrap .col.no-outer-ctm {
+        flex-basis: 19.8%;
+        max-width: 19.8%;
+    }
+}
+
+/* 1024px */
+
+@media (max-width: 1024px) {
+	.mfp-content .has-dropdown .icon-angle-down.active + ul,
+	.mfp-content .has-dropdown .icon-angle-down.active + .mega-menu-inner-wrap{
+		display: block;
+	}
+	.ct-dropdown-category.d-child .dropdown-list{
+		margin-bottom: 0 !important;
+		margin-top: 15px;
+	}
+	.mfp-content .header-nav .current-dropdown .nav-top-link + .sub-menu.nav-dropdown.mega-sub-menu{
+		display: block;
+		    position: relative;
+    	width: calc(100% + 40px) !important;
+	}
+	.mega-menu-inner-wrap ul{
+		opacity: 1 !important;
+		visibility: visible !important;
+		position: relative !important;
+		inset: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-height: auto !important;
+		
+	}
+	.mega-menu-inner-wrap ul ul{
+		display: none;
+	}
+	.main-dropdown-wrap li .ct-dropdown .woocommerce:empty{
+		display: none;
+	}
+	.icon-angle-down.active,
+	.mfp-content .has-dropdown.current-dropdown  .nav-top-link .icon-angle-down{
+		transform: rotate(360deg) !important;
+	}
+	.mega-sub-menu .main-dropdown-wrap {
+		min-height: auto !important;
+	}
+	
+	div.mega-sub-menu .main-dropdown-wrap>li a{
+		display: inline-block !important;
+	}
+	.ct-dropdown {
+		background-color: transparent !important;
+	}
+	.mfp-content .has-dropdown .icon-angle-down {
+		top: 0;
+	}
+	.main-dropdown-wrap li .ct-dropdown {
+		margin-top: 20px;
+	}
+	.mega-sub-menu .main-dropdown-wrap li {
+		position: relative !important;
+	}
+}
+
+@media (max-width: 991px) {
+    .offer-section-wrap .col.no-outer-ctm {
+        flex-basis: 16.5%;
+        max-width: 16.5%;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1280px) {
+    .page-template-woocommercecheckout-php .checkout-section,
+    .page-template-checkout .woocommerce {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+}
+
+/*Mac book Screens*/

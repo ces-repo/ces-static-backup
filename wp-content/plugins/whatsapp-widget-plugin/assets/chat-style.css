@@ -1,0 +1,403 @@
+/* ============================================
+   CES Webchat Widget - Schwebendes Chat-Fenster
+   ============================================ */
+
+/* Chat-Bubble Button */
+#ces-chat-bubble {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 2147483646;
+    width: 60px;
+    height: 60px;
+    background-color: #17B14B;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#ces-chat-bubble:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+#ces-chat-bubble svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
+
+/* Unread Badge */
+#ces-chat-bubble .unread-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: #e74c3c;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+/* ============================================
+   Chat-Fenster
+   ============================================ */
+#ces-chat-window {
+    position: fixed;
+    bottom: 96px;
+    right: 24px;
+    z-index: 2147483647;
+    width: 380px;
+    height: 520px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+#ces-chat-window.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Schliess-Animation */
+#ces-chat-window.closing {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+}
+
+/* ============================================
+   Header
+   ============================================ */
+#ces-chat-header {
+    background: linear-gradient(135deg, #17B14B, #129a3e);
+    color: white;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+#ces-chat-header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#ces-chat-header .header-avatar {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#ces-chat-header .header-info h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#ces-chat-header .header-info span {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+#ces-chat-header .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#ces-chat-header .header-actions a,
+#ces-chat-header .header-actions button {
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+    font-size: 16px;
+}
+
+#ces-chat-header .header-actions a:hover,
+#ces-chat-header .header-actions button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================
+   Nachrichten-Bereich
+   ============================================ */
+#ces-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    background-color: #f0ebe3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Scrollbar */
+#ces-chat-messages::-webkit-scrollbar {
+    width: 5px;
+}
+
+#ces-chat-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#ces-chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+/* Nachrichten */
+.ces-msg {
+    max-width: 82%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    line-height: 1.45;
+    position: relative;
+    font-size: 13.5px;
+}
+
+.ces-msg-user {
+    background-color: #d9fdd3;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.ces-msg-bot {
+    background-color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.ces-msg-error {
+    background-color: #ffeaea;
+    color: #c0392b;
+    align-self: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ces-msg-time {
+    font-size: 10px;
+    color: #999;
+    margin-top: 4px;
+    text-align: right;
+}
+
+/* Willkommensnachricht */
+.ces-welcome {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px 16px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+/* Typing Indicator */
+.ces-typing {
+    display: none;
+    align-self: flex-start;
+    background: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    margin: 0 16px 8px 16px;
+}
+
+.ces-typing.active {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.ces-typing span {
+    width: 7px;
+    height: 7px;
+    background: #aaa;
+    border-radius: 50%;
+    animation: ces-bounce 1.4s infinite;
+}
+
+.ces-typing span:nth-child(2) { animation-delay: 0.2s; }
+.ces-typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes ces-bounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-6px); }
+}
+
+/* ============================================
+   Eingabe-Bereich
+   ============================================ */
+#ces-chat-input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background: white;
+    border-top: 1px solid #e8e8e8;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+#ces-chat-input {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 9px 16px;
+    font-size: 13.5px;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+#ces-chat-input:focus {
+    border-color: #17B14B;
+}
+
+#ces-chat-input::placeholder {
+    color: #aaa;
+}
+
+#ces-chat-send {
+    width: 38px;
+    height: 38px;
+    background: #17B14B;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+#ces-chat-send:hover {
+    background: #129a3e;
+}
+
+#ces-chat-send:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#ces-chat-send svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
+
+/* WhatsApp Link im Footer */
+#ces-chat-wa-link {
+    text-align: center;
+    padding: 6px;
+    background: #fafafa;
+    border-top: 1px solid #f0f0f0;
+    flex-shrink: 0;
+}
+
+#ces-chat-wa-link a {
+    color: #17B14B;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#ces-chat-wa-link a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   Mobile Fullscreen
+   ============================================ */
+@media (max-width: 480px) {
+    #ces-chat-window {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        transform: translateY(100%);
+    }
+
+    #ces-chat-window.open {
+        transform: translateY(0);
+    }
+
+    #ces-chat-window.closing {
+        transform: translateY(100%);
+    }
+
+    #ces-chat-bubble {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    /* Bubble verstecken wenn Chat offen */
+    #ces-chat-bubble.hidden {
+        display: none;
+    }
+}
+
+/* ============================================
+   Verbindungsstatus
+   ============================================ */
+#ces-connection-status {
+    text-align: center;
+    font-size: 11px;
+    padding: 3px;
+    display: none;
+}
+
+#ces-connection-status.offline {
+    display: block;
+    background: #ffeaea;
+    color: #c0392b;
+}
+
+#ces-connection-status.reconnected {
+    display: block;
+    background: #e8f5e9;
+    color: #2e7d32;
+}
