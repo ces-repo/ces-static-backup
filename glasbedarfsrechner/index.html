@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glasbedarfsrechner | catering-miete.ch</title>
+<meta name="description" content="Wie viele Gläser brauche ich für meinen Event? Der interaktive Rechner von catering-miete.ch – nach Gästezahl, Anlass, Dauer und aktuellem Wetter. Direkt anfragen.">
+<link rel="canonical" href="https://ces-repo.github.io/ces-static-backup/glasbedarfsrechner/">
+<meta property="og:title" content="Glasbedarfsrechner | catering-miete.ch">
+<meta property="og:description" content="Wie viele Gläser brauche ich für meinen Event? Jetzt interaktiv berechnen und direkt anfragen.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ces-repo.github.io/ces-static-backup/glasbedarfsrechner/">
+<meta property="og:image" content="https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2025/06/Styled_Shooting_Autumn_238-scaled.jpg">
+<meta name="robots" content="index,follow">
+
+
+<style type="text/css">@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;src:url(https://ces-repo.github.io/ces-static-backup/cf-fonts/v/plus-jakarta-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<style>
+:root{
+  --green:#17B14B; --green-dark:#0f8c3a; --ink:#23332b; --muted:#6b7d72;
+  --bg:#f4f9f5; --card:#ffffff; --line:#e5efe8; --radius:20px;
+  --shadow:0 10px 40px rgba(23,177,75,.10),0 2px 8px rgba(0,0,0,.04);
+  --orange:#e07b20; --blue:#2e7ab6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;padding:24px 16px 60px}
+.wrap{max-width:960px;margin:0 auto}
+
+/* Topbar */
+.ssr-topbar{max-width:960px;margin:0 auto 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ssr-brand img{display:block;height:46px;width:auto}
+.ssr-nav{display:flex;gap:18px;align-items:center}
+.ssr-nav a{color:var(--green-dark);text-decoration:none;font-weight:600;font-size:14px}
+.ssr-nav a:hover{text-decoration:underline}
+
+/* Header */
+.head{text-align:center;margin-bottom:26px}
+.head h1{font-size:clamp(24px,5vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.head h1 .em{color:var(--green)}
+.head p{color:var(--muted);margin-top:8px;font-size:15px;max-width:580px;margin-left:auto;margin-right:auto}
+
+/* Weather bar */
+.wx-bar{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 16px;margin-bottom:18px;font-size:14px;flex-wrap:wrap}
+.wx-bar .wx-icon{font-size:26px;line-height:1}
+.wx-bar .wx-label{font-weight:700;flex:1}
+.wx-bar .wx-sub{color:var(--muted);font-size:12px}
+.wx-bar .wx-badge{background:#effbf2;color:var(--green-dark);font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.wx-bar.hot{border-color:#f5cba0;background:#fff9f3}
+.wx-bar.hot .wx-badge{background:#fde9d3;color:var(--orange)}
+
+/* Layout */
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.card h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:18px}
+
+/* Controls */
+.field{margin-bottom:20px}
+.field:last-child{margin-bottom:0}
+.field .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
+.field label{font-weight:700;font-size:15px}
+.field .val{font-weight:800;color:var(--green-dark);font-size:15px;font-variant-numeric:tabular-nums}
+.field .hint{font-size:12px;color:var(--muted);margin-top:5px;min-height:15px}
+
+input[type=range]{
+  -webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:999px;
+  background:linear-gradient(90deg,var(--green) var(--p,50%),#e3ece6 var(--p,50%));
+  outline:none;cursor:pointer;
+}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:4px solid var(--green);cursor:grab;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:4px solid var(--green);cursor:grab}
+
+/* Mode toggle */
+.mode-toggle{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:20px}
+.mode-btn{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:10px 8px;font-family:inherit;cursor:pointer;text-align:center;transition:.15s}
+.mode-btn:hover{border-color:var(--green)}
+.mode-btn.active{border-color:var(--green);background:#effbf2}
+.mode-btn .mb-icon{font-size:20px;display:block;margin-bottom:3px}
+.mode-btn .mb-label{font-weight:700;font-size:13px;display:block}
+.mode-btn .mb-sub{font-size:11px;color:var(--muted)}
+
+/* Presets */
+.presets{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:6px}
+.preset{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:7px 11px;font-size:13px;font-weight:600;cursor:pointer;color:var(--ink);font-family:inherit;transition:.15s;display:flex;align-items:center;gap:5px}
+.preset:hover{border-color:var(--green)}
+.preset.active{background:var(--green);border-color:var(--green);color:#fff}
+
+/* Glass checkboxes */
+.glass-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.glass-cb{display:flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:12px;padding:9px 10px;cursor:pointer;transition:.15s;user-select:none}
+.glass-cb:hover{border-color:var(--green)}
+.glass-cb.checked{border-color:var(--green);background:#effbf2}
+.glass-cb .gc-icon{font-size:20px;line-height:1}
+.glass-cb .gc-text{flex:1}
+.glass-cb .gc-name{font-weight:700;font-size:13px;display:block}
+.glass-cb .gc-price{font-size:11px;color:var(--muted)}
+.glass-cb input[type=checkbox]{display:none}
+
+/* Result */
+.result{position:sticky;top:16px}
+.glass-rows{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.glass-row{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.glass-row .gr-icon{font-size:22px;line-height:1}
+.glass-row .gr-info{flex:1}
+.glass-row .gr-name{font-weight:700;font-size:14px}
+.glass-row .gr-detail{font-size:12px;color:var(--muted)}
+.glass-row .gr-qty{font-weight:800;font-size:20px;color:var(--green-dark);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.total-box{background:linear-gradient(165deg,#effbf2,#dff6e8);border:1.5px solid #b7e8c5;border-radius:16px;padding:16px;text-align:center;margin-bottom:14px}
+.total-box .tb-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
+.total-box .tb-price{font-size:28px;font-weight:800;color:var(--green-dark);font-variant-numeric:tabular-nums}
+.total-box .tb-sub{font-size:12px;color:var(--muted);margin-top:3px}
+
+.wx-factor{font-size:13px;color:var(--orange);font-weight:600;text-align:center;margin-bottom:10px;min-height:18px}
+
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:14px 22px;border-radius:999px;transition:.15s;box-shadow:0 6px 18px rgba(23,177,75,.35);cursor:pointer;border:none;font-family:inherit}
+.cta:hover{background:var(--green-dark);transform:translateY(-1px)}
+.cta:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+.empty-state{text-align:center;padding:30px 10px;color:var(--muted)}
+.empty-state .es-icon{font-size:36px;display:block;margin-bottom:8px}
+
+/* Datum + Wetterbar */
+.wx-wrapper{margin-bottom:20px;display:flex;flex-direction:column;gap:10px}
+.wx-date-row{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 16px}
+.date-row{display:flex;gap:8px;align-items:center;flex:1}
+.date-row input[type=date]{flex:1;padding:8px 12px;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:14px;color:var(--ink);background:#fff;outline:none;transition:.15s}
+.date-row input[type=date]:focus{border-color:var(--green)}
+.wx-bar{margin-bottom:0!important}
+
+/* Content + FAQ */
+.ssr-content{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;box-shadow:var(--shadow);margin-top:22px}
+.ssr-content h2{font-size:21px;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+.ssr-content h2:not(:first-child){margin-top:26px}
+.ssr-content p{color:var(--ink);margin-bottom:12px;font-size:15px}
+.ssr-content p.muted{color:var(--muted);font-size:14px}
+.faq details{border:1px solid var(--line);border-radius:14px;margin-bottom:10px;background:#fff;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:13px 16px;font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--green);font-size:24px;font-weight:700;line-height:1}
+.faq details[open] summary::after{content:"\2013"}
+.faq details[open] summary{background:#f1faf3}
+.faq .faq-a{padding:2px 16px 16px;color:var(--ink);font-size:14px;line-height:1.55}
+
+.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:26px;line-height:1.6}
+.foot a{color:var(--green-dark);text-decoration:none;font-weight:600}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41DPSSWBSS"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','G-41DPSSWBSS',{page_title:'Glasbedarfsrechner',page_path:'/glasbedarfsrechner/'});
+</script>
+</head>
+<body>
+
+<header class="ssr-topbar">
+  <a class="ssr-brand" href="https://ces-repo.github.io/ces-static-backup/" aria-label="catering-miete.ch Startseite">
+    <img src="https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2023/01/CES-logo-web.png" alt="Catering &amp; Event Services">
+  </a>
+  <nav class="ssr-nav">
+    <a href="https://ces-repo.github.io/ces-static-backup/">Zur Hauptseite</a>
+    <a href="https://ces-repo.github.io/ces-static-backup/warenkorb/">Anfrage ansehen →</a>
+  </nav>
+</header>
+
+<div class="wrap">
+
+<div class="head">
+  <h1>Der <span class="em">Glasbedarfs-Rechner</span></h1>
+  <p>Wie viele Gläser braucht Ihr Event wirklich? Anlass, Dauer, Serviceart und sogar das Wetter am Event-Tag fliessen ein. Halb ernst gemeint — aber die Mengen stimmen.</p>
+  <div id="lineBanner" style="display:none;margin-top:12px;align-items:center;gap:7px;background:#effbf2;border:1.5px solid #b7e8c5;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:#0f8c3a"></div>
+</div>
+
+<!-- Datum + Wetterbar direkt zusammen -->
+<div class="wx-wrapper">
+  <div class="wx-date-row">
+    <label for="eventDate" style="font-weight:700;font-size:15px;white-space:nowrap">Event-Datum</label>
+    <div class="date-row" style="flex:1/">
+      <input type="date" id="eventDate">
+      <span id="dateHint" style="font-size:12px;color:var(--muted);white-space:nowrap"></span>
+    </div>
+  </div>
+  <div id="wxBar" class="wx-bar" style="display:none;margin-bottom:0">
+    <span class="wx-icon" id="wxIcon">🌤️</span>
+    <div>
+      <div class="wx-label" id="wxLabel">Wetter wird geladen…</div>
+      <div class="wx-sub" id="wxSub"></div>
+    </div>
+    <span class="wx-badge" id="wxBadge"></span>
+  </div>
+</div>
+
+<div class="grid">
+  <!-- Controls -->
+  <div class="card">
+    <h2>Die Stellschrauben</h2>
+
+    <div class="field" style="margin-bottom:16px">
+      <label style="display:block;margin-bottom:8px">Serviceart</label>
+      <div class="mode-toggle">
+        <button class="mode-btn active" id="modeTable" onclick="setMode('table')">
+          <span class="mb-icon">🍽️</span>
+          <span class="mb-label">Tisch-Service</span>
+          <span class="mb-sub">1 Glas/Gast/Sorte</span>
+        </button>
+        <button class="mode-btn" id="modeSelf" onclick="setMode('self')">
+          <span class="mb-icon">🥂</span>
+          <span class="mb-label">Apéro / SB</span>
+          <span class="mb-sub">1.8×/Gast Basis</span>
+        </button>
+        <button class="mode-btn" id="modeCombined" onclick="setMode('combined')">
+          <span class="mb-icon">🍽️🥂</span>
+          <span class="mb-label">Apéro + Tisch</span>
+          <span class="mb-sub">beides addiert</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="row"><label for="guests">Anzahl Gäste</label><span class="val" id="guestsVal">60</span></div>
+      <input type="range" id="guests" min="2" max="500" value="60" step="1">
+      <div class="hint" id="guestsHint"></div>
+    </div>
+
+    <div class="field">
+      <label style="display:block;margin-bottom:8px">Anlass <span style="font-weight:500;color:var(--muted);font-size:13px">— wählt Glassorten vor</span></label>
+      <div class="presets" id="presets"></div>
+    </div>
+
+    <div class="field" id="durationField">
+      <div class="row"><label for="duration">Event-Dauer</label><span class="val" id="durationVal">3 Stunden</span></div>
+      <input type="range" id="duration" min="1" max="10" value="3" step="0.5">
+      <div class="hint" id="durationHint" style="display:none"></div>
+    </div>
+
+    <div class="field">
+      <label style="display:block;margin-bottom:8px">Glassorten</label>
+      <div class="glass-grid" id="glassGrid"></div>
+    </div>
+
+    <div class="field" id="funField">
+      <div class="row"><label for="funFactor">Trinkfreude</label><span class="val" id="funVal">Normal</span></div>
+      <input type="range" id="funFactor" min="0" max="2" value="1" step="1">
+      <div class="hint" id="funHint"></div>
+    </div>
+
+  </div>
+
+  <!-- Result -->
+  <div class="card result">
+    <h2>Ihr Glasbedarf</h2>
+    <div id="glassRows" class="glass-rows"></div>
+    <div id="emptyState" class="empty-state" style="display:none">
+      <span class="es-icon">🥛</span>
+      Bitte mindestens eine Glassorte auswählen.
+    </div>
+    <div id="wxFactor" class="wx-factor"></div>
+    <div id="totalBox" class="total-box">
+      <div class="tb-label">Mietpreis ca.</div>
+      <div class="tb-price" id="totalPrice">–</div>
+      <div class="tb-sub" id="totalSub"></div>
+    </div>
+    <button class="cta" id="ctaBtn" onclick="doRequest()" disabled>Gläser anfragen →</button>
+    <div style="font-size:11px;color:var(--muted);margin-top:10px;text-align:center">Preise exkl. MwSt. · gilt für 1–4 Tage (eine Mieteinheit) · Lieferung nach Absprache</div>
+  </div>
+</div>
+
+<!-- SEO Content + FAQ -->
+<section class="ssr-content">
+  <h2>Wie viele Gläser brauche ich für meinen Event?</h2>
+  <p>Das hängt von drei Dingen ab: der <strong>Serviceart</strong>, dem <strong>Anlass</strong> und der <strong>Wetterlage</strong>. Bei gedecktem Tisch mit Servicepersonal nimmt jeder Gast ein Glas pro Sorte und gibt es zurück — da reicht Gästezahl plus zehn Prozent Reserve. Bei einem Steh-Apéro oder Selbstbedienung greifen Gäste häufiger zu einem frischen Glas, besonders wenn es warm ist.</p>
+  <p>Als Faustregel aus über 30 Jahren Erfahrung: <strong>Tisch-Service</strong> → 1 Glas pro Sorte × Gäste + 10 %. <strong>Apéro oder Selbstbedienung</strong> → rund 2–3 Gläser pro Gast über eine dreistündige Veranstaltung, bei Hitze und langer Dauer deutlich mehr.</p>
+  <p class="muted">Champagnergläser sind häufig vergessen — bei Hochzeiten, Galas und Firmenfesten mit Apéro-Toast sind sie Pflicht. Der Rechner schlägt sie automatisch vor.</p>
+
+  <h2>Häufige Fragen zum Glasbedarf</h2>
+  <div class="faq">
+    <details><summary>Wie viele Gläser pro Person brauche ich wirklich?</summary><div class="faq-a">Bei gedecktem Tisch mit Servicepersonal: 1 Wasser-, 1 Weisswein- und 1 Rotweinglas pro Gast plus 10 % Reserve. Bei Apéro oder Selbstbedienung: 2–3 Gläser pro Gast für eine dreistündige Veranstaltung, mehr bei Hitze oder langer Dauer.</div></details>
+    <details><summary>Warum spielt das Wetter beim Glasbedarf eine Rolle?</summary><div class="faq-a">Bei hohen Temperaturen trinken Gäste mehr und häufiger — vor allem Wasser und Weisswein. Jede Nachfüllung bedeutet in der Selbstbedienung ein frisches Glas. Ab etwa 25 °C rechnen wir 10–20 % mehr Gläser ein, ab 30 °C bis zu 30 % mehr.</div></details>
+    <details><summary>Brauche ich Champagnergläser?</summary><div class="faq-a">Bei Hochzeiten, Galas, Taufen und Firmenfesten mit Empfangs-Toast ja — wir empfehlen 1 Champagnerglas pro Gast plus 10 % Reserve. Der Rechner wählt sie bei diesen Anlässen automatisch vor.</div></details>
+    <details><summary>Was passiert, wenn ich zu wenig Gläser miete?</summary><div class="faq-a">Beim Steh-Apéro staut sich dann das Abwaschen, Gäste warten oder greifen zum letzten benutzten Glas. Unsere Reserve von 10 % (Tisch) bis 30 % (SB/Hitze) ist deshalb eingebaut — lieber eines zu viel als Stress in der Küche.</div></details>
+    <details><summary>Wie viele Weingläser brauche ich für 30 Personen?</summary><div class="faq-a">Mit der Faustregel Faktor 1.8 sind das rund 54 Gläser für einen dreistündigen Apéro. Das Standard-Rotweinglas passt dabei für Rotwein, Weisswein, Wasser und Longdrinks — ein Glastyp für fast alles. Im Sommer etwas grosszügiger planen; der Rechner oben berücksichtigt Anlass, Dauer und Wetter automatisch.</div></details>
+    <details><summary>Wie miete ich die Gläser?</summary><div class="faq-a">Einfach im Rechner die gewünschten Sorten auswählen und auf «Gläser anfragen» klicken — die berechneten Mengen landen direkt in Ihrer Offertenanfrage. Den Rest besprechen wir gerne persönlich.</div></details>
+  </div>
+</section>
+
+<div class="foot">
+  Mengen-Logik basiert auf über 30 Jahren Event-Erfahrung und wird durch echte Wetterdaten von <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> ergänzt.<br>
+  Ein Spielzeug von <a href="https://ces-repo.github.io/ces-static-backup/" target="_blank" rel="noopener">catering-miete.ch</a> — Geschirr &amp; Event-Equipment mieten in Zürich.
+</div>
+
+</div><!-- /wrap -->
+
+<script>
+(function(){
+"use strict";
+
+/* ============================================================
+   GLAS-LINIEN — alle Produktfamilien mit echten WC-IDs
+   ============================================================ */
+var GLASS_LINES = {
+  // Standard
+  standard:[
+    {key:"water",    icon:"💧", name:"Wasserglas",        id:2346, price:0.60},
+    {key:"white",    icon:"🥂", name:"Weissweinglas",     id:2338, price:0.72},
+    {key:"red",      icon:"🍷", name:"Rotweinglas",       id:2342, price:0.72},
+    {key:"champ",    icon:"✨", name:"Champagnerglas",    id:2349, price:0.72},
+    {key:"beer",     icon:"🍺", name:"Bierhumpen/Seidel", id:2651, price:0.90},
+    {key:"longdrink",icon:"🧊", name:"Longdrinkglas",     id:3169, price:0.96},
+  ],
+  // Premium
+  premium:[
+    {key:"water",    icon:"💧", name:"Wasserglas Premium",    id:2935, price:0.96},
+    {key:"white",    icon:"🥂", name:"Weissweinglas Premium", id:2542, price:0.90},
+    {key:"red",      icon:"🍷", name:"Rotweinglas Premium",   id:2545, price:0.90},
+    {key:"champ",    icon:"✨", name:"Champagnerglas Premium",id:2548, price:0.90},
+    {key:"beer",     icon:"🍺", name:"Bierhumpen/Seidel",     id:2651, price:0.90},
+    {key:"longdrink",icon:"🧊", name:"Longdrinkglas Vintage", id:3169, price:0.96},
+  ],
+  // Vintage
+  vintage:[
+    {key:"water",    icon:"💧", name:"Wasserglas",                 id:2346, price:0.60},
+    {key:"white",    icon:"🥂", name:"Weissweinglas",              id:2338, price:0.72},
+    {key:"red",      icon:"🍷", name:"Rotweinglas",                id:2342, price:0.72},
+    {key:"champ",    icon:"✨", name:"Champagnerschale Vintage",   id:3055, price:0.90},
+    {key:"longdrink",icon:"🧊", name:"Longdrinkglas Vintage",      id:3169, price:0.96},
+    {key:"whisky",   icon:"🥃", name:"Whiskybecher Vintage",       id:3058, price:0.90},
+  ],
+  // Bier & Bar
+  beer:[
+    {key:"water",    icon:"💧", name:"Wasserglas",         id:2346, price:0.60},
+    {key:"beer",     icon:"🍺", name:"Bierhumpen/Seidel",  id:2651, price:0.90},
+    {key:"beer2",    icon:"🍺", name:"Bierstange 3dl",     id:2570, price:0.90},
+    {key:"wheat",    icon:"🍺", name:"Weizenbierglas",     id:2593, price:0.90},
+    {key:"longdrink",icon:"🧊", name:"Libby Longdrink",    id:2777, price:0.60},
+    {key:"whisky",   icon:"🥃", name:"Whiskybecher",       id:2573, price:0.60},
+  ],
+  // Stripe — Weinglas deckt Weiss+Rot, Champagnerschale statt Flöte
+  "stripe-blau":[
+    {key:"water",icon:"💙", name:"Wasserglas Stripe Blau",      id:14068,price:0.96},
+    {key:"wine", icon:"🍷", name:"Weinglas Stripe Blau",        id:14115,price:0.96},
+    {key:"champ",icon:"✨", name:"Champagnerschale Stripe Blau",id:14074,price:0.96},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",            id:2651, price:0.90},
+  ],
+  "stripe-gelb":[
+    {key:"water",icon:"💛", name:"Wasserglas Stripe Gelb",      id:14061,price:0.96},
+    {key:"wine", icon:"🍷", name:"Weinglas Stripe Gelb",        id:14122,price:0.96},
+    {key:"champ",icon:"✨", name:"Champagnerschale Stripe Gelb",id:14101,price:0.96},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",            id:2651, price:0.90},
+  ],
+  "stripe-grau":[
+    {key:"water",icon:"🩶", name:"Wasserglas Stripe Grau",      id:14070,price:0.96},
+    {key:"wine", icon:"🍷", name:"Weinglas Stripe Grau",        id:25016,price:0.96},
+    {key:"champ",icon:"✨", name:"Champagnerschale Stripe Grau",id:14108,price:0.96},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",            id:2651, price:0.90},
+  ],
+  "stripe-gruen":[
+    {key:"water",icon:"💚", name:"Wasserglas Stripe Grün",      id:14003,price:0.96},
+    {key:"wine", icon:"🍷", name:"Weinglas Stripe Grün",        id:14121,price:0.96},
+    {key:"champ",icon:"✨", name:"Champagnerschale Stripe Grün",id:14106,price:0.96},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",            id:2651, price:0.90},
+  ],
+  "stripe-klar":[
+    // Klar: nur Champagnerschale; Wasser+Wein = Standard
+    {key:"water",icon:"💧", name:"Wasserglas",                    id:2346, price:0.60},
+    {key:"wine", icon:"🍷", name:"Rotweinglas",                   id:2342, price:0.72},
+    {key:"champ",icon:"✨", name:"Champagnerschale Stripe Klar", id:17965,price:0.96},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",             id:2651, price:0.90},
+  ],
+  "stripe-rosa":[
+    {key:"water",icon:"🩷", name:"Wasserglas Stripe Rosa",       id:14065,price:0.96},
+    {key:"wine", icon:"🍷", name:"Weinglas Stripe Rosa",         id:14123,price:0.96},
+    {key:"champ",icon:"✨", name:"Champagnerschale Stripe Rosa", id:14107,price:0.96},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",             id:2651, price:0.90},
+  ],
+  // Twist — nur Wasserglas farbig, Wein aus Premium-Linie
+  "twist-blau":[
+    {key:"water",icon:"💙", name:"Wasserglas Twist Blau",   id:3318, price:0.96},
+    {key:"white",icon:"🥂", name:"Weissweinglas Premium",   id:2542, price:0.90},
+    {key:"red",  icon:"🍷", name:"Rotweinglas Premium",     id:2545, price:0.90},
+    {key:"champ",icon:"✨", name:"Champagnerglas Premium",  id:2548, price:0.90},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",        id:2651, price:0.90},
+  ],
+  "twist-gelb":[
+    {key:"water",icon:"💛", name:"Wasserglas Twist Gelb",   id:14127,price:0.96},
+    {key:"white",icon:"🥂", name:"Weissweinglas Premium",   id:2542, price:0.90},
+    {key:"red",  icon:"🍷", name:"Rotweinglas Premium",     id:2545, price:0.90},
+    {key:"champ",icon:"✨", name:"Champagnerglas Premium",  id:2548, price:0.90},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",        id:2651, price:0.90},
+  ],
+  "twist-grau":[
+    {key:"water",icon:"🩶", name:"Wasserglas Twist Grau",   id:19234,price:0.96},
+    {key:"white",icon:"🥂", name:"Weissweinglas Premium",   id:2542, price:0.90},
+    {key:"red",  icon:"🍷", name:"Rotweinglas Premium",     id:2545, price:0.90},
+    {key:"champ",icon:"✨", name:"Champagnerglas Premium",  id:2548, price:0.90},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",        id:2651, price:0.90},
+  ],
+  "twist-gruen":[
+    {key:"water",icon:"💚", name:"Wasserglas Twist Grün",   id:3324, price:0.96},
+    {key:"white",icon:"🥂", name:"Weissweinglas Premium",   id:2542, price:0.90},
+    {key:"red",  icon:"🍷", name:"Rotweinglas Premium",     id:2545, price:0.90},
+    {key:"champ",icon:"✨", name:"Champagnerglas Premium",  id:2548, price:0.90},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",        id:2651, price:0.90},
+  ],
+  "twist-rosa":[
+    {key:"water",icon:"🩷", name:"Wasserglas Twist Rosa",   id:3321, price:0.96},
+    {key:"white",icon:"🥂", name:"Weissweinglas Premium",   id:2542, price:0.90},
+    {key:"red",  icon:"🍷", name:"Rotweinglas Premium",     id:2545, price:0.90},
+    {key:"champ",icon:"✨", name:"Champagnerglas Premium",  id:2548, price:0.90},
+    {key:"beer", icon:"🍺", name:"Bierhumpen/Seidel",        id:2651, price:0.90},
+  ],
+};
+
+/* URL-Parameter: ?linie=premium&farbe=blau → Linie wählen */
+var _urlP     = new URLSearchParams(window.location.search);
+var _linie    = _urlP.get('linie') || 'standard';
+var _farbe    = _urlP.get('farbe') || '';
+var _lineKey  = _farbe ? (_linie + '-' + _farbe) : _linie;
+var GLASSES   = GLASS_LINES[_lineKey] || GLASS_LINES['standard'];
+var _lineLabel = _urlP.get('label') || ''; // Produkt-Name für Banner
+
+var SHOP = "https://www.catering-miete.ch";
+
+/* ============================================================
+   ANLASS-PRESETS
+   Glas-Keys, die vorgewählt werden + SB-Gläser/Std-Schätzung
+   ============================================================ */
+var PRESETS = [
+  {key:"hochzeit",  label:"💍 Hochzeit",    glasses:["water","white","red","champ"], glPerHourSB:0.7},
+  {key:"firmenfest",label:"🤝 Firmenfest",  glasses:["water","white","red","champ"], glPerHourSB:0.6},
+  {key:"apero",     label:"🍾 Apéro",       glasses:["water","white","champ"],        glPerHourSB:0.8},
+  {key:"geburtstag",label:"🎂 Geburtstag",  glasses:["water","white","red","beer"],   glPerHourSB:0.65},
+  {key:"grillparty",label:"🔥 Grillparty",  glasses:["water","beer","longdrink"],     glPerHourSB:0.75},
+  {key:"konferenz", label:"📋 Konferenz",   glasses:["water"],                         glPerHourSB:0.35},
+];
+
+/* ============================================================
+   ZÜRICH MONATS-MITTELTEMPERATUREN (Fallback ohne Live-Wetter)
+   ============================================================ */
+var ZH_CLIMATE = [3,4,8,12,17,20,23,22,18,13,7,4]; // Jan–Dez °C
+
+/* ============================================================
+   STATE
+   ============================================================ */
+var state = {
+  mode:       "table",      // "table" | "self"
+  guests:     60,
+  anlass:     "hochzeit",
+  duration:   3,
+  date:       null,         // Date object
+  temp:       null,         // °C, null = nicht bekannt
+  tempSource: null,         // "forecast" | "climate"
+  funFactor:  1,            // 0=mässig, 1=normal, 2=ausgelassen
+  activeGlasses: new Set(["water","white","red","champ"]),
+};
+
+/* ============================================================
+   DOM-SHORTCUTS
+   ============================================================ */
+var $ = function(id){ return document.getElementById(id); };
+
+/* ============================================================
+   INIT: Presets + Gläser-Grid + Default-Datum (14 Tage voraus)
+   ============================================================ */
+(function buildUI(){
+  // Presets
+  var pp = $("presets");
+  PRESETS.forEach(function(p){
+    var b = document.createElement("button");
+    b.className = "preset" + (p.key===state.anlass?" active":"");
+    b.textContent = p.label;
+    b.dataset.key = p.key;
+    b.addEventListener("click", function(){
+      state.anlass = p.key;
+      state.activeGlasses = new Set(p.glasses);
+      updateGlassGrid();
+      update();
+    });
+    pp.appendChild(b);
+  });
+
+  // Gläser-Grid (GLASSES ist jetzt linie-spezifisch)
+  updateGlassGrid();
+
+  // Linie-Banner anzeigen wenn von Produktseite kommend
+  var banner = $("lineBanner");
+  if(_lineLabel && banner){
+    banner.textContent = '🍷 Basis: ' + decodeURIComponent(_lineLabel);
+    banner.style.display = 'inline-flex';
+  }
+
+  // Anlass-Default für Bier-Linie: Grillparty vorwählen
+  if(_linie === 'beer') {
+    state.anlass = 'grillparty';
+    state.activeGlasses = new Set(['water','beer']);
+  }
+  // Stripe: Wasser + Weinglas (key "wine") vorgewählt statt white/red
+  if(_linie === 'stripe') {
+    state.activeGlasses = new Set(['water','wine']);
+  }
+  // Vintage: white + red + champ vorgewählt
+  if(_linie === 'vintage') {
+    state.activeGlasses = new Set(['water','white','red','champ']);
+  }
+
+  // Default-Datum: 14 Tage ab heute
+  var d = new Date(); d.setDate(d.getDate()+14);
+  $("eventDate").value = d.toISOString().slice(0,10);
+  state.date = d;
+  onDateChange(false);
+
+  // Sliders
+  [["guests",function(v){state.guests=+v;}],
+   ["duration",function(v){state.duration=+v;}],
+   ["funFactor",function(v){state.funFactor=+v;}]
+  ].forEach(function(pair){
+    $(pair[0]).addEventListener("input",function(){
+      pair[1](this.value);
+      update();
+    });
+  });
+
+  function onDateInput(){
+    var raw = $("eventDate").value;
+    if(!raw) return;
+    // T12:00:00 verhindert UTC-Mitternacht-Timezone-Drift
+    var d2 = new Date(raw + 'T12:00:00');
+    if(!isNaN(d2)) { state.date=d2; onDateChange(true); }
+  }
+  $("eventDate").addEventListener("change", onDateInput);
+  $("eventDate").addEventListener("input",  onDateInput);
+
+  update();
+})();
+
+function updateGlassGrid(){
+  var grid = $("glassGrid");
+  grid.innerHTML="";
+  GLASSES.forEach(function(g){
+    var checked = state.activeGlasses.has(g.key);
+    var label = document.createElement("label");
+    label.className = "glass-cb" + (checked?" checked":"");
+    label.innerHTML =
+      '<input type="checkbox"'+(checked?" checked":"")+'>'
+      +'<span class="gc-icon">'+g.icon+'</span>'
+      +'<span class="gc-text">'
+      +  '<span class="gc-name">'+g.name+'</span>'
+      +  '<span class="gc-price">CHF '+g.price.toFixed(2)+'/Stk</span>'
+      +'</span>';
+    label.addEventListener("click", function(e){
+      e.preventDefault();
+      if(state.activeGlasses.has(g.key)) state.activeGlasses.delete(g.key);
+      else state.activeGlasses.add(g.key);
+      this.classList.toggle("checked", state.activeGlasses.has(g.key));
+      this.querySelector("input").checked = state.activeGlasses.has(g.key);
+      update();
+    });
+    grid.appendChild(label);
+  });
+}
+
+/* ============================================================
+   MODE
+   ============================================================ */
+function setMode(m){
+  state.mode = m;
+  $("modeTable").classList.toggle("active",    m==="table");
+  $("modeSelf").classList.toggle("active",     m==="self");
+  $("modeCombined").classList.toggle("active", m==="combined");
+  $("durationHint").style.display = (m==="self"||m==="combined")?"":"none";
+  update();
+}
+
+/* ============================================================
+   DATUM + WETTER
+   ============================================================ */
+function onDateChange(fetch){
+  if(!state.date) return;
+  var today = new Date(); today.setHours(0,0,0,0);
+  var target = new Date(state.date); target.setHours(0,0,0,0);
+  var diffDays = Math.round((target-today)/(1000*60*60*24));
+  if(diffDays<0){
+    $("dateHint").textContent="Vergangenes Datum";
+    state.temp = ZH_CLIMATE[state.date.getMonth()];
+    state.tempSource = "climate";
+    renderWx();
+    update();
+    return;
+  }
+  if(diffDays<=15){
+    $("dateHint").textContent="Live-Vorhersage";
+    if(fetch) fetchWeather();
+    else { state.temp=null; state.tempSource=null; renderWx(); update(); }
+  } else {
+    $("dateHint").textContent="Zürich-Saisonmittel";
+    state.temp = ZH_CLIMATE[state.date.getMonth()];
+    state.tempSource = "climate";
+    renderWx();
+    update();
+  }
+}
+
+function fetchWeather(){
+  var lat=47.3769, lon=8.5417;
+  var ds = state.date.toISOString().slice(0,10);
+  var url = "https://api.open-meteo.com/v1/forecast"
+    +"?latitude="+lat+"&longitude="+lon
+    +"&daily=temperature_2m_max,weathercode"
+    +"&start_date="+ds+"&end_date="+ds
+    +"&timezone=Europe%2FZurich";
+  fetch(url)
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.daily && d.daily.temperature_2m_max && d.daily.temperature_2m_max[0]!=null){
+        state.temp = d.daily.temperature_2m_max[0];
+        state.tempSource = "forecast";
+        var wc = d.daily.weathercode ? d.daily.weathercode[0] : 0;
+        state.wxCode = wc;
+      } else {
+        state.temp = ZH_CLIMATE[state.date.getMonth()];
+        state.tempSource = "climate";
+      }
+      renderWx();
+      update();
+    })
+    .catch(function(){
+      state.temp = ZH_CLIMATE[state.date.getMonth()];
+      state.tempSource = "climate";
+      renderWx();
+      update();
+    });
+}
+
+function wxEmoji(code, temp){
+  if(code==null) return temp>=28?"☀️":temp>=20?"🌤️":"🌥️";
+  if(code===0) return "☀️";
+  if(code<=3) return "🌤️";
+  if(code<=49) return "🌥️";
+  if(code<=69) return "🌧️";
+  if(code<=79) return "🌨️";
+  return "⛈️";
+}
+
+function renderWx(){
+  var bar = $("wxBar");
+  if(state.temp===null){ bar.style.display="none"; return; }
+  bar.style.display="flex";
+  var t = Math.round(state.temp);
+  var hot = t>=25;
+  bar.className = "wx-bar" + (hot?" hot":"");
+  $("wxIcon").textContent = wxEmoji(state.wxCode||null, t);
+  $("wxLabel").textContent = t+"°C in Zürich — "+tempWord(t);
+  $("wxSub").textContent   = state.tempSource==="forecast"?"Live-Vorhersage für diesen Tag":"Saisonmittel Zürich";
+  $("wxBadge").textContent = wxEffect(t).label;
+}
+
+function tempWord(t){
+  if(t<=5)  return "frostig — kaum Durst";
+  if(t<=12) return "kühl — normaler Konsum";
+  if(t<=20) return "angenehm — normaler Konsum";
+  if(t<=27) return "warm — mehr Gläser im Umlauf";
+  if(t<=32) return "heiss — deutlich mehr Gläser";
+  return "Hitzewelle — Vorrat üppig planen";
+}
+
+function wxEffect(t){
+  if(t===null) return {mult:1.0, label:""};
+  if(t<=12) return {mult:0.95, label:"−5 % kalt"};
+  if(t<=20) return {mult:1.0,  label:"kein Wärmezuschlag"};
+  if(t<=27) return {mult:1.10, label:"+10 % Wärme"};
+  if(t<=32) return {mult:1.20, label:"+20 % Hitze"};
+  return     {mult:1.30, label:"+30 % Hitzewelle"};
+}
+
+/* ============================================================
+   KERN-BERECHNUNG
+   ============================================================ */
+/**
+ * Berechnet die Glasmenge PRO SORTE.
+ * numActive = Anzahl ausgewählter Glassorten (wichtig für Apéro-Berechnung).
+ *
+ * Apéro-Logik (Gründer-Faustregel):
+ *   Gesamt = Gäste × max(1.8,  1.0 + Stunden×0.3)  — nicht pro Sorte!
+ *   Pro Sorte = ceil(Gesamt / numActive)
+ *   Wärmezuschlag am Schluss aufs Gesamt.
+ *   Bei 7h+17 Gäste: max(1.8, 3.1)=3.1 → Gesamt 53 → ~18/Sorte (3 Sorten) ✓
+ */
+function calcTotal(numActive){
+  var g   = state.guests;
+  var fun = [0.85, 1.0, 1.25][state.funFactor];
+  var wx  = state.temp!==null ? wxEffect(state.temp).mult : 1.0;
+
+  if(state.mode==="table"){
+    // Tisch: pro Sorte unabhängig, also total = numActive × qty/Sorte
+    return {perType: Math.ceil(g * 1.10), total: numActive * Math.ceil(g * 1.10), detail: g+" Gäste + 10 % Reserve (×1.1)"};
+
+  } else if(state.mode==="self"){
+    // Apéro/SB: 1.8 Gesamtfaktor (nicht pro Sorte!)
+    // Linear ab 0h: max(1.8, 1.0+Stunden×0.3) × Trinkfreude × Wärme
+    var factor = Math.max(1.8, 1.0 + state.duration * 0.3) * fun * wx;
+    var totalGl = Math.ceil(g * factor);
+    var perType = Math.ceil(totalGl / Math.max(1, numActive));
+    var factorRaw = Math.max(1.8, 1.0 + state.duration * 0.3);
+    return {perType: perType, total: perType * numActive,
+      detail: g+" Gäste · Gesamt "+totalGl+" / "+numActive+" Sorten"};
+
+  } else {
+    // Apéro + Tisch: Apéro-Gesamt aufgeteilt + Tisch pro Sorte addiert
+    var aperoFactor = Math.max(1.8, 1.0 + state.duration * 0.3) * fun * wx;
+    var aperoTotal  = Math.ceil(g * aperoFactor);
+    var aperoPerType = Math.ceil(aperoTotal / Math.max(1, numActive));
+    var tischPerType = Math.ceil(g * 1.10);
+    var perTypeComb = aperoPerType + tischPerType;
+    return {perType: perTypeComb, total: perTypeComb * numActive,
+      detail: g+" Gäste · Apéro "+aperoPerType+" + Tisch "+tischPerType+"/Sorte"};
+  }
+}
+
+/* ============================================================
+   UPDATE (Render-Schleife)
+   ============================================================ */
+function update(){
+  // Slider-Labels
+  rangeFill($("guests")); rangeFill($("duration")); rangeFill($("funFactor"));
+  $("guestsVal").textContent = state.guests;
+  $("guestsHint").textContent = guestWord(state.guests);
+  var h = state.duration;
+  $("durationVal").textContent = (h%1?""+Math.floor(h)+":30":""+h)+(" Stunde"+(h!==1?"n":""));
+  var isSB = state.mode==="self"||state.mode==="combined";
+  $("durationHint").textContent = state.mode==="combined"
+    ? "Dauer des Apéro-Teils — Tisch-Service wird separat addiert."
+    : "Ab 1.5h steigt der Glasbedarf pro 30 Min. weiter an.";
+  var funLabels=["Mässig — zurückhaltende Runde ☕","Normal — geselliger Anlass 🥂","Ausgelassen — die Fete des Jahres 🎉"];
+  $("funVal").textContent = ["Mässig","Normal","Ausgelassen"][state.funFactor];
+  $("funHint").textContent = funLabels[state.funFactor];
+  $("funField").style.display = isSB ? "" : "none";
+  $("durationField").style.display = isSB ? "" : "none";
+
+  // Preset-Highlights
+  [].forEach.call($("presets").children, function(b){
+    b.classList.toggle("active", b.dataset.key===state.anlass);
+  });
+
+  // Glass rows
+  var rows = $("glassRows");
+  rows.innerHTML = "";
+  var total = 0, totalPrice = 0;
+  var active = GLASSES.filter(function(g){ return state.activeGlasses.has(g.key); });
+
+  if(active.length===0){
+    $("emptyState").style.display="";
+    $("totalBox").style.display="none";
+    $("wxFactor").textContent="";
+    $("ctaBtn").disabled=true;
+    return;
+  }
+  $("emptyState").style.display="none";
+  $("totalBox").style.display="";
+
+  // Berechnung: EINMAL für alle Sorten, dann aufteilen
+  var calc = calcTotal(active.length);
+
+  active.forEach(function(g){
+    var qty = calc.perType;
+    total += qty;
+    totalPrice += qty * g.price;
+    var row = document.createElement("div");
+    row.className = "glass-row";
+    row.innerHTML =
+      '<span class="gr-icon">'+g.icon+'</span>'
+      +'<div class="gr-info">'
+      +  '<div class="gr-name">'+g.name+'</div>'
+      +  '<div class="gr-detail">'+calc.detail+' · CHF '+g.price.toFixed(2)+'/Stk</div>'
+      +'</div>'
+      +'<span class="gr-qty">'+qty+'×</span>';
+    rows.appendChild(row);
+  });
+
+  // Wetter-Effekt-Hinweis
+  var we = state.temp!==null ? wxEffect(state.temp) : {label:""};
+  $("wxFactor").textContent = (we.label && state.mode==="self") ? "Wetter-Aufschlag: "+we.label : "";
+
+  // Total
+  $("totalPrice").textContent = "ca. CHF "+fmt(Math.round(totalPrice));
+  $("totalSub").textContent = fmt(total)+" Gläser gesamt · exkl. MwSt.";
+  $("ctaBtn").disabled = false;
+  $("ctaBtn").textContent = fmt(total)+" Gläser anfragen →";
+}
+
+/* ============================================================
+   NONCE — beim Load holen, damit CTA sofort klickbar ist
+   ============================================================ */
+var nonce = null;
+
+function fetchNonce(){
+  fetch(SHOP+'https://ces-repo.github.io/ces-static-backup/wp-json/ces/v1/gc-nonce', {cache:'no-store'})
+    .then(function(r){ return r.json(); })
+    .then(function(d){ nonce = d.nonce || null; })
+    .catch(function(){ nonce = null; });
+}
+
+/* ============================================================
+   CTA: alle Gläser auf einmal per AJAX in den Warenkorb
+   (identische Mechanik wie KI-Planer / Mietliste)
+   ============================================================ */
+function doRequest(){
+  var active = GLASSES.filter(function(g){ return state.activeGlasses.has(g.key); });
+  if(!active.length) return;
+
+  var btn = $("ctaBtn");
+  btn.disabled = true;
+  btn.textContent = "Wird geladen…";
+
+  // Nonce noch nicht da? Neu holen, dann retry.
+  function proceed(nc){
+    var calc2 = calcTotal(active.length);
+    var items = active.map(function(g){
+      return {product_id: g.id, quantity: calc2.perType};
+    });
+
+    var body = new URLSearchParams();
+    body.append('action',  'ces_gc_multi_add');
+    body.append('nonce',   nc);
+    body.append('items',   JSON.stringify(items));
+
+    fetch(SHOP+'https://ces-repo.github.io/ces-static-backup/wp-admin/admin-ajax.php', {
+      method:  'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body:    body.toString(),
+      credentials: 'include'  // WC-Session-Cookie mitsenden
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.success){
+        if(typeof gtag!=='undefined'){var c2=calcTotal(active.length);gtag('event','rechner_anfrage',{rechner:'glas',modus:state.mode,anzahl:c2.total,linie:_linie+(_farbe?'-'+_farbe:'')});}
+        window.location.href = d.data.cart_url;
+      } else {
+        btn.disabled = false;
+        var c = calcTotal(active.length);
+      btn.textContent = active.length > 0 ? fmt(c.total)+" Gläser anfragen →" : "Gläser anfragen →";
+        alert("Fehler: " + (d.data && d.data.message ? d.data.message : "Unbekannter Fehler"));
+      }
+    })
+    .catch(function(){
+      // Fallback: erste Glassorte als einfacher Cart-Link
+      window.location.href = SHOP+"/warenkorb/?add-to-cart="+active[0].id+"&quantity="+calcQty(active[0]);
+    });
+  }
+
+  if(nonce){
+    proceed(nonce);
+  } else {
+    // Nonce nachholen (Race: Seite schnell geklickt bevor Fetch fertig)
+    fetch(SHOP+'https://ces-repo.github.io/ces-static-backup/wp-json/ces/v1/gc-nonce', {cache:'no-store'})
+      .then(function(r){ return r.json(); })
+      .then(function(d){ proceed(d.nonce || ''); })
+      .catch(function(){
+        window.location.href = SHOP+"/warenkorb/?add-to-cart="+active[0].id+"&quantity="+calcQty(active[0]);
+      });
+  }
+}
+
+/* ============================================================
+   HELFER
+   ============================================================ */
+function fmt(n){ return n.toLocaleString("de-CH"); }
+function rangeFill(el){
+  var min=+el.min, max=+el.max, v=+el.value;
+  el.style.setProperty("--p", ((v-min)/(max-min)*100)+"%");
+}
+function guestWord(g){
+  if(g<=10)  return "Kleine Runde — sehr persönlich.";
+  if(g<=30)  return "Überschaubare Feier.";
+  if(g<=80)  return "Klassischer Event-Rahmen.";
+  if(g<=200) return "Grossanlass — Logistik planen.";
+  return "Massenveranstaltung. Gut zählen!";
+}
+
+// Globale Hooks für onclick-Attribute (IIFE-Scope-Fix)
+window.setMode    = setMode;
+window.doRequest  = doRequest;
+
+// Wetter + Nonce beim Seitenload holen
+fetchWeather();
+fetchNonce();
+
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"Glasbedarfs-Rechner","url":"https://ces-repo.github.io/ces-static-backup/glasbedarfsrechner/","applicationCategory":"BusinessApplication","operatingSystem":"Web","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"CHF"},"description":"Interaktiver Rechner: Wie viele Gläser braucht Ihr Event? Nach Gästezahl, Anlass, Serviceart und aktuellem Wetter — inkl. direkter Mietanfrage.","provider":{"@type":"Organization","name":"Catering & Event Services","url":"https://ces-repo.github.io/ces-static-backup/"}},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ces-repo.github.io/ces-static-backup/"},{"@type":"ListItem","position":2,"name":"Glasbedarfs-Rechner","item":"https://ces-repo.github.io/ces-static-backup/glasbedarfsrechner/"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Wie viele Gläser pro Person brauche ich?","acceptedAnswer":{"@type":"Answer","text":"Bei gedecktem Tisch: 1 Wasser-, 1 Weisswein- und 1 Rotweinglas pro Gast plus 10 % Reserve. Bei Apéro oder Selbstbedienung: 2–3 Gläser pro Gast für drei Stunden, mehr bei Hitze."}},
+{"@type":"Question","name":"Warum spielt das Wetter beim Glasbedarf eine Rolle?","acceptedAnswer":{"@type":"Answer","text":"Bei hohen Temperaturen trinken Gäste mehr. Ab 25 °C rechnen wir 10–20 % mehr Gläser ein, ab 30 °C bis zu 30 % mehr."}},
+{"@type":"Question","name":"Brauche ich Champagnergläser?","acceptedAnswer":{"@type":"Answer","text":"Bei Hochzeiten, Galas und Firmenfesten mit Toast ja — 1 Champagnerglas pro Gast plus 10 % Reserve."}},
+{"@type":"Question","name":"Was passiert, wenn ich zu wenig Gläser miete?","acceptedAnswer":{"@type":"Answer","text":"Beim Steh-Apéro staut sich das Abwaschen, Gäste warten oder greifen zum letzten benutzten Glas. Deshalb ist eine Reserve von 10 % (gedeckter Tisch) bis 30 % (Selbstbedienung/Hitze) eingebaut."}},
+{"@type":"Question","name":"Wie viele Weingläser brauche ich für 30 Personen?","acceptedAnswer":{"@type":"Answer","text":"Mit der Faustregel Faktor 1.8 sind das rund 54 Gläser für einen dreistündigen Apéro. Das Standard-Rotweinglas passt für Rotwein, Weisswein, Wasser und Longdrinks. Im Sommer etwas grosszügiger planen."}},
+{"@type":"Question","name":"Wie miete ich die Gläser?","acceptedAnswer":{"@type":"Answer","text":"Im Rechner Sorten auswählen und auf Gläser anfragen klicken — die Mengen landen direkt in der Offertenanfrage."}}
+]}
+]}
+</script>
+
+</body>
+</html>
