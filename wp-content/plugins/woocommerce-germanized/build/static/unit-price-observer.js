@@ -1,5 +1,5 @@
-/******/ (function() { // webpackBootstrap
-var __webpack_exports__ = {};
+/******/ (() => { // webpackBootstrap
+let __webpack_exports__ = {};
 /*global wc_gzd_unit_price_observer_params, accounting */
 ;
 (function ($, window, document, undefined) {
@@ -69,32 +69,26 @@ var __webpack_exports__ = {};
         return false;
       }
       if (self.params.refresh_on_load) {
-        $.each(self.params.price_selector, function (priceSelector, priceArgs) {
-          var isPrimary = priceArgs.hasOwnProperty('is_primary_selector') ? priceArgs['is_primary_selector'] : false,
-            $price = self.getPriceNode(self, priceSelector, isPrimary),
-            $unitPrice = self.getUnitPriceNode(self, $price);
-
-          /**
-           * Do only refresh primary price nodes on load.
-           */
-          if (!isPrimary) {
-            return;
-          }
-          if ($unitPrice.length > 0) {
-            self.stopObserver(self, priceSelector);
-            self.setUnitPriceLoading(self, $unitPrice);
-            setTimeout(function () {
-              self.stopObserver(self, priceSelector);
-              var priceData = self.getCurrentPriceData(self, $price, priceArgs['is_total_price'], isPrimary, priceArgs['quantity_selector']);
-              if (priceData) {
-                self.refreshUnitPrice(self, priceData, priceSelector, isPrimary);
-              } else if ($unitPrice.length > 0) {
-                self.unsetUnitPriceLoading(self, $unitPrice);
-              }
-              self.startObserver(self, priceSelector, isPrimary);
-            }, 250);
-          }
-        });
+        /**
+         * Do not refresh variable products on single product pages
+         * as that leads to race conditions with the Woo Core.
+         */
+        if (self.isVar && self.$form) {
+          self.$form.on('show_variation.unit-price-observer', {
+            GermanizedUnitPriceObserver: self
+          }, function (event) {
+            var self = event.data.GermanizedUnitPriceObserver;
+            self.forceRefresh(self);
+          });
+          self.$form.on('reset_data.unit-price-observer', {
+            GermanizedUnitPriceObserver: self
+          }, function (event) {
+            var self = event.data.GermanizedUnitPriceObserver;
+            self.forceRefresh(self);
+          });
+        } else {
+          self.forceRefresh(self);
+        }
       }
     }
     $wrapper.data('unitPriceObserver', self);
@@ -125,6 +119,9 @@ var __webpack_exports__ = {};
     } else if (isPrimarySelector && $node.length <= 0) {
       $node = self.$wrapper.find('.price:not(.price-unit):last' + visibleSelector);
     }
+    if ($node.length <= 0 && self.$wrapper.hasClass('wc-block-product')) {
+      $node = self.$wrapper.find('.wc-block-grid__product-price');
+    }
     return $node;
   };
   GermanizedUnitPriceObserver.prototype.getObserverNode = function (self, priceSelector, isPrimarySelector) {
@@ -138,16 +135,30 @@ var __webpack_exports__ = {};
     if ($price.length <= 0) {
       return [];
     }
+    var $element = [];
     var isSingleProductBlock = $price.parents('.wp-block-woocommerce-product-price[data-is-descendent-of-single-product-template]').length > 0;
+    var isProductGridBlock = self.$wrapper.hasClass('wc-block-product');
     if ('SPAN' === $price[0].tagName) {
-      return self.$wrapper.find('.price-unit');
+      $element = self.$wrapper.find('.price-unit');
     } else {
       if (isSingleProductBlock) {
-        return self.$wrapper.find('.wp-block-woocommerce-gzd-product-unit-price[data-is-descendent-of-single-product-template] .price-unit');
+        $element = self.$wrapper.find('.wp-block-woocommerce-gzd-product-unit-price[data-is-descendent-of-single-product-template] .price-unit');
+      } else if (isProductGridBlock) {
+        $element = self.$wrapper.find('.price-unit:not(.wc-gzd-additional-info-placeholder)');
       } else {
-        return self.$wrapper.find('.price-unit:not(.wc-gzd-additional-info-placeholder, .wc-gzd-additional-info-loop)');
+        $element = self.$wrapper.find('.price-unit:not(.wc-gzd-additional-info-placeholder, .wc-gzd-additional-info-loop)');
       }
     }
+
+    /**
+     * Check whether the unit price is empty - prevent refreshing empty prices.
+     */
+    if ($element.length > 0) {
+      if ($element.is(':empty') || $element.find('.wc-gzd-additional-info-placeholder').is(':empty')) {
+        $element = [];
+      }
+    }
+    return $element;
   };
   GermanizedUnitPriceObserver.prototype.stopObserver = function (self, priceSelector) {
     var observer = self.getObserver(self, priceSelector);
@@ -166,7 +177,7 @@ var __webpack_exports__ = {};
           childList: true,
           subtree: true,
           characterData: true,
-          attributeFilter: ['style']
+          attributeFilter: ['style', 'data-force-refresh']
         });
       }
       return true;
@@ -281,6 +292,23 @@ var __webpack_exports__ = {};
     var self = event.data.GermanizedUnitPriceObserver;
     self.variationId = 0;
   };
+  GermanizedUnitPriceObserver.prototype.forceRefresh = function (self) {
+    $.each(self.params.price_selector, function (priceSelector, priceArgs) {
+      var isPrimary = priceArgs.hasOwnProperty('is_primary_selector') ? priceArgs['is_primary_selector'] : false,
+        $price = self.getPriceNode(self, priceSelector, isPrimary),
+        $unitPrice = self.getUnitPriceNode(self, $price);
+
+      /**
+       * Do only refresh primary price nodes on load.
+       */
+      if (!isPrimary) {
+        return;
+      }
+      if ($unitPrice.length > 0) {
+        $price[0].setAttribute('data-force-refresh', 'yes');
+      }
+    });
+  };
   GermanizedUnitPriceObserver.prototype.onFoundVariation = function (event, variation) {
     var self = event.data.GermanizedUnitPriceObserver;
     if (variation.hasOwnProperty('variation_id')) {
@@ -303,7 +331,8 @@ var __webpack_exports__ = {};
       var sale_price = '',
         $priceInner = $priceCloned.find('.amount:first'),
         $qty = $(self.params.wrapper + ' ' + quantitySelector + ':first'),
-        qty = 1;
+        qty = 1,
+        is_range = false;
       if ($qty.length > 0) {
         qty = parseFloat($qty.val());
       }
@@ -329,6 +358,13 @@ var __webpack_exports__ = {};
         var $sale_price = $($priceCloned.find('.amount')[1]);
         sale_price = self.getRawPrice($sale_price, self.params.price_decimal_sep);
       }
+
+      /**
+       * Is price range, e.g. variable products
+       */
+      if (sale_price && $priceCloned.find('del').length <= 0) {
+        is_range = true;
+      }
       $price.find('.wc-gzd-is-hidden').removeClass('wc-gzd-is-hidden');
       if ($unit_price.length > 0 && price) {
         if (isTotalPrice) {
@@ -341,7 +377,8 @@ var __webpack_exports__ = {};
           'price': price,
           'unit_price': $unit_price,
           'sale_price': sale_price,
-          'quantity': qty
+          'quantity': qty,
+          'is_range': is_range
         };
       }
     }
@@ -367,12 +404,14 @@ var __webpack_exports__ = {};
   GermanizedUnitPriceObserver.prototype.setUnitPriceLoading = function (self, $unit_price) {
     var unitPriceOrg = $unit_price.html();
     if (!$unit_price.hasClass('wc-gzd-loading')) {
-      var textWidth = self.getTextWidth($unit_price),
-        textHeight = $unit_price.find('span').length > 0 ? $unit_price.find('span').innerHeight() : $unit_price.height();
-      /**
-       * @see https://github.com/zalog/placeholder-loading
-       */
-      $unit_price.html('<span class="wc-gzd-placeholder-loading"><span class="wc-gzd-placeholder-row" style="height: ' + $unit_price.height() + 'px;"><span class="wc-gzd-placeholder-row-col-4" style="width: ' + textWidth + 'px; height: ' + textHeight + 'px;"></span></span></span>');
+      if ($unit_price.find('.wc-gzd-placeholder-loading').length <= 0) {
+        var textWidth = self.getTextWidth($unit_price),
+          textHeight = $unit_price.find('span').length > 0 ? $unit_price.find('span').innerHeight() : $unit_price.height();
+        /**
+         * @see https://github.com/zalog/placeholder-loading
+         */
+        $unit_price.html('<span class="wc-gzd-placeholder-loading"><span class="wc-gzd-placeholder-row" style="height: ' + $unit_price.height() + 'px;"><span class="wc-gzd-placeholder-row-col-4" style="width: ' + textWidth + 'px; height: ' + textHeight + 'px;"></span></span></span>');
+      }
       $unit_price.addClass('wc-gzd-loading');
     }
     $unit_price.data('org-html', unitPriceOrg);
@@ -410,12 +449,51 @@ var __webpack_exports__ = {};
   };
   $(function () {
     if (typeof wc_gzd_unit_price_observer_params !== 'undefined') {
-      $(wc_gzd_unit_price_observer_params.wrapper).each(function () {
-        if ($(this).is('body')) {
-          return;
+      const initObservations = function () {
+        $(wc_gzd_unit_price_observer_params.wrapper).each(function () {
+          if ($(this).is('body')) {
+            return;
+          }
+          $(this).wc_germanized_unit_price_observer();
+        });
+      };
+      initObservations();
+
+      /**
+       * Support (async) navigation for product collection block
+       */
+      if ($('.wp-block-woocommerce-product-collection').length > 0) {
+        let currentObserver = false;
+        const maybeInitObserver = function (mutationsList, observer) {
+          let needsInit = false;
+          for (let mutation of mutationsList) {
+            let $element = $(mutation.target);
+            if ($element.length > 0 && 'woocommerce/product-template' === $element.data('block-name')) {
+              needsInit = true;
+              break;
+            }
+          }
+          if (needsInit) {
+            initObservations();
+          }
+        };
+        if ("MutationObserver" in window) {
+          currentObserver = new window.MutationObserver(maybeInitObserver);
+        } else if ("WebKitMutationObserver" in window) {
+          currentObserver = new window.WebKitMutationObserver(maybeInitObserver);
+        } else if ("MozMutationObserver" in window) {
+          currentObserver = new window.MozMutationObserver(maybeInitObserver);
         }
-        $(this).wc_germanized_unit_price_observer();
-      });
+        if (currentObserver) {
+          $('.wp-block-woocommerce-product-collection').each(function () {
+            let $node = $(this);
+            currentObserver.observe($node[0], {
+              childList: true,
+              subtree: true
+            });
+          });
+        }
+      }
     }
   });
 })(jQuery, window, document);

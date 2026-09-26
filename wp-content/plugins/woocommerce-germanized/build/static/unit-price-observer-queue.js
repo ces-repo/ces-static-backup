@@ -1,5 +1,5 @@
-/******/ (function() { // webpackBootstrap
-var __webpack_exports__ = {};
+/******/ (() => { // webpackBootstrap
+let __webpack_exports__ = {};
 /*global woocommerce_admin_meta_boxes, woocommerce_admin, accounting, woocommerce_admin_meta_boxes_order */
 window.germanized = window.germanized || {};
 (function ($, germanized) {
@@ -36,6 +36,7 @@ window.germanized = window.germanized || {};
           'price': self.queuesInExecution[currentQueueId][queueKey].priceData.price,
           'price_sale': self.queuesInExecution[currentQueueId][queueKey].priceData.sale_price,
           'quantity': self.queuesInExecution[currentQueueId][queueKey].priceData.quantity,
+          'is_range': self.queuesInExecution[currentQueueId][queueKey].priceData.hasOwnProperty('is_range') ? self.queuesInExecution[currentQueueId][queueKey].priceData.is_range : false,
           'key': queueKey
         }]);
       });
