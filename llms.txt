@@ -1,0 +1,93 @@
+# Catering & Event Services (CES) — catering-miete.ch
+
+> Schweizer Mietshop für hochwertiges Catering- und Event-Equipment mit Lager in Schlieren bei Zürich. Gläser, Geschirr, Besteck, Mobiliar, Tischwäsche, Dekoration und Catering-Geräte für Hochzeiten, Firmenfeste, Apéros, Konferenzen, Grillpartys und private Anlässe in der Deutschschweiz. Über 400 Mietartikel mit echten Preisen, Reinigung im Mietpreis inbegriffen, über 30 Jahre Event-Erfahrung, Familienunternehmen.
+
+Catering & Event Services (CES) wurde von Andreas und Stephanie von Kirschten gegründet. Andreas ist gelernter Kellner und F&B-Manager, Stephanie Chef Patissière — zusammen über 30 Jahre Erfahrung in Gastronomie, Catering und Events. catering-miete.ch ist der Mietshop. Schwesterdomains: rampenverkauf.shop (gebrauchte und neue Catering-Ware aus dem eigenen Bestand), kaufen.catering-miete.ch (Neuware von Bartscher und Maison Truffe), marktplatz.catering-miete.ch (Verzeichnis von Caterern und Eventdienstleistern) und anlassplanung.ch (Offerten- und Einsatz-Tool für Caterer). catering-miete.com ist die englische Version des Mietshops.
+
+Der Mietshop unterscheidet sich durch: echte Preise (nichts «auf Anfrage»), Mietpreis = Stückpreis für die Pauschale bis 4 Tage, Geschirr/Gläser/Besteck dürfen schmutzig zurück (Reinigung inbegriffen; Mobiliar muss sauber zurück), komplette Stil-Serien (Gold, Kairo, Baguette Vintage Kupfer, London, Madrid), Packages pro Gast mit Gästezahl-Rechner, kostenlose Planungs-Tools und Lieferung an den Anlassort in der Deutschschweiz.
+
+## Hauptkategorien Mietshop
+
+- [Gläser, Geschirr & Besteck](https://ces-repo.github.io/ces-static-backup/Verleih/glaser-geschirr-besteck): Rotwein-, Weisswein-, Champagner-, Wasser- und Longdrinkgläser (Serien Premium, Stripe, Twist, Allroundglas), Tafelporzellan Kairo/Havanna/à table, Platzteller Zermatt und Dublin, Besteck-Serien Gold, Kairo, London, Madrid, Baguette Vintage Kupfer
+- [Mobiliar](https://ces-repo.github.io/ces-static-backup/Verleih/mobiliar): Runde Banketttische 152/180 cm, Farmtables 243×100, Seminartische Woody, Konferenztische City, Stehtische easy/Aluminium/Kubix, Festbankgarnituren 60/80 cm (Bank 220×26 cm, 8–10 Personen je Garnitur, ab 6 Stück), Bankettstühle, Tiffany-Chiavari, Cross-Back-Rustico, Lucy Modern, Crystal, Sonnenschirme mit Sockel
+- [Cateringequipment](https://ces-repo.github.io/ces-static-backup/Verleih/cateringequipment): Chafing-Dishes, Suppenstationen, Thermoskannen, Gasgrills (Reinigung beim Grill inbegriffen), Kühlschränke und Gefriertruhen, Heissluftöfen GN, Glühweintöpfe, Dispenser, Absperrpfosten
+- [Tischwäsche & Hussen](https://ces-repo.github.io/ces-static-backup/Verleih/tischtuecher-mieten): Leinentischtücher rund Ø 330 und rechteckig 225×330 in 15+ Farben (Offwhite, Sage, Antique Rose, Mustard, Burgundy, Black, Navy, Nature), Stoffservietten (Nature, Eucalyptus, Champagner …), Stretchhussen weiss/schwarz, Musselin-Läufer
+- [Dekoration](https://ces-repo.github.io/ces-static-backup/Verleih/dekoration): Teelichthalter, Teelichtgläser, Serviettenringe Gold/Silber, Glasvasen, Lichterketten, Kerzen, Etageren, Champagnerkühler
+
+## Packages pro Gast (Menge = Gästezahl, Rechner auf der Produktseite)
+
+- [Komplettangebote Geschirr](https://ces-repo.github.io/ces-static-backup/Verleih/glaser-geschirr-besteck/komplettangebote-geschirr): Apero Package, Dinner Package, Dinner Package plus (mit Stoffserviette und Tischtuch anteilig), je ab 20 Gästen
+- [Dinner Package Premium](https://ces-repo.github.io/ces-static-backup/Vermietung/dinner-package-premium-mieten.html), [Dinner Package Premium plus](https://ces-repo.github.io/ces-static-backup/Vermietung/dinner-package-premium-plus-mieten.html), [Apero Package Premium](https://ces-repo.github.io/ces-static-backup/Vermietung/apero-package-premium-mieten.html): Premium-Gläser, Besteckserie wählbar (Gold, Kairo, Baguette Vintage Kupfer)
+- [Komplettangebote Mobiliar](https://ces-repo.github.io/ces-static-backup/Verleih/mobiliar/komplettangebote-mobiliar): Mobiliar Package 8 Personen rund und 6 Personen eckig (Tisch + Stühle, Menge = Tische)
+- [Tischdeko-Pakete](https://ces-repo.github.io/ces-static-backup/Verleih/dekoration/komplettangebote-dekoration): [Tischdeko-Paket Nature](https://ces-repo.github.io/ces-static-backup/Vermietung/tischdeko-paket-nature.html) und [Tischdeko-Paket Eucalyptus](https://ces-repo.github.io/ces-static-backup/Vermietung/tischdeko-paket-eucalyptus.html), CHF 8.00 pro Gast, ab 25 Gästen, Servietten, Vasen, Kerzen und Platzteller inklusive
+
+## Kostenlose Event-Planungs-Tools
+
+- [Übersicht Event-Tools](https://ces-repo.github.io/ces-static-backup/event-tools): alle Rechner und Planer auf einer Seite
+- [KI-Event-Planer](https://ces-repo.github.io/ces-static-backup/event-planer): erstellt aus Anlass, Gästezahl, Stil, Farben und Ort eine komplette Mietliste mit fotorealistischem Bild des gedeckten Tisches; Wünsche in den Notizen werden berücksichtigt
+- [Grundriss-Planer](https://ces-repo.github.io/ces-static-backup/raum-rechner/planer): Tische und Stühle im Raum anordnen
+- [Raum- und Mengenrechner](https://ces-repo.github.io/ces-static-backup/raum-rechner): Überschlag für Geschirr-, Besteck- und Glasmengen bei X Gästen
+- [Glasbedarfsrechner](https://ces-repo.github.io/ces-static-backup/glasbedarfsrechner/): Gläser nach Getränkeplan und Gästezahl, direkt in die Offertenanfrage
+- [Tischtuch-Rechner](https://ces-repo.github.io/ces-static-backup/tischtuchrechner/): passende Tischtuchgrösse je Tischform und Überhang
+- [Sonnenschirm-Rechner](https://ces-repo.github.io/ces-static-backup/sonnenschirm-rechner/): Anzahl Schirme nach Gästen, Anlass und Sonnenstand
+- [Bestellung per Excel/CSV](https://ces-repo.github.io/ces-static-backup/bestellung-per-excel): Mietliste hochladen, Bestellung entsteht automatisch (Mein Konto)
+
+## Event-Inspirationen (echte Mietlisten mit Bildern aus dem KI-Planer)
+
+- [Event-Ideen Übersicht](https://ces-repo.github.io/ces-static-backup/event-ideen-sitemap): alle veröffentlichten Event-Inspirationen
+- [Rustikale Hochzeit 80 Gäste im Restaurant](https://ces-repo.github.io/ces-static-backup/event-ideen/rustikal-hochzeit-80-gaeste-rustikales-restaurant-autumn-f0b95): Farmtables, Cross-Back, Kupfer-Besteck, Herbst-Farben
+- [Elegante Hochzeit 120 Gäste Hotel-Ballsaal](https://ces-repo.github.io/ces-static-backup/event-ideen/elegant-hochzeit-120-gaeste-hotel-ballsaal-summer-ce774): Kairo-Goldrand-Porzellan, Gold-Besteck
+- [Glamouröse Hochzeit 200 Gäste](https://ces-repo.github.io/ces-static-backup/event-ideen/festlich-hochzeit-200-gaeste-indoor-saal-winter-06b28): Blau-Silber-Setting, 20 Banketttische
+- [Elegantes Firmenfest 120 Gäste Hotel-Ballsaal](https://ces-repo.github.io/ces-static-backup/event-ideen/elegant-firmenfest-120-gaeste-hotel-ballsaal-autumn-9abe3): Weiss-Gold, Chafing-Dishes, Champagner-Empfang
+- [Rustikale Grillparty 50 Gäste am Seeufer](https://ces-repo.github.io/ces-static-backup/event-ideen/rustikal-grillparty-50-gaeste-strand-seeufer-summer-7a11d): Gasgrill, Farmtables, Sommer-Apéro
+- [Festliche Gala 120 Gäste Berghütte](https://ces-repo.github.io/ces-static-backup/event-ideen/festlich-gala-120-gaeste-berghuette-autumn-6fd34): Premium-Gläser, Kairo-Besteck
+- [Boho Apéro 50 Gäste Gartenterrasse](https://ces-repo.github.io/ces-static-backup/event-ideen/boho-apero-50-gaeste-garten-terrasse-summer-5b0c6): Kubix-Stehtische, Jute-Platzsets, Stripe-Gläser grün
+- [Moderne Konferenz 80 Gäste](https://ces-repo.github.io/ces-static-backup/event-ideen/modern-konferenz-80-gaeste-modernes-restaurant-spring-f77f5): Seminartische Woody, Lucy-Stühle weiss
+- [Elegante Taufe 50 Gäste Festzelt](https://ces-repo.github.io/ces-static-backup/event-ideen/elegant-taufe-50-gaeste-festzelt-spring-4dccd): Rosé-Tischtücher, Kairo-Gold
+- [Rustikales Weihnachtsdinner Waldhütte](https://ces-repo.github.io/ces-static-backup/event-ideen/rustikal-weihnachten-80-gaeste-waldhuette-winter-fee64): Nature-Linen, Lichterketten, Glühwein-Setup
+
+## Themen-Landingpages nach Anlass
+
+- [Hochzeit mieten](https://ces-repo.github.io/ces-static-backup/mieten-fur-hochzeit): Komplett-Ausstattung für Hochzeiten, Tipps für Gästezahl und Mengen
+- [Rustikale Hochzeit](https://ces-repo.github.io/ces-static-backup/rustikale-hochzeit): Cross-Back-Stühle, Farmtables, Lucy — das meistgemietete Hochzeits-Segment, mit FAQ
+- [Firmenfest planen](https://ces-repo.github.io/ces-static-backup/firmenfest-planen): Business-Events, Chafing-Dishes, Stehtische mit Hussen
+- [Apéro organisieren](https://ces-repo.github.io/ces-static-backup/apero-organisieren): Stehempfänge, Apéro-Teller 14.5 cm, Champagnergläser
+- [Mietmobiliar](https://ces-repo.github.io/ces-static-backup/mietmobiliar): Übersicht Tische und Stühle mit Massen
+- [Weihnachten](https://ces-repo.github.io/ces-static-backup/weihnachten): Weihnachtsfeier-Ausstattung, Glühweintopf, Lichterketten
+- [Geburtstag](https://ces-repo.github.io/ces-static-backup/geburtstage): Geburtstags-Dinner und -Feiern
+- [Sommerfest & Grillparty](https://ces-repo.github.io/ces-static-backup/sommerfest-grillparty): Outdoor-Anlässe, Gasgrill, Sonnenschirme
+- [Vereinsfest & Dorffest](https://ces-repo.github.io/ces-static-backup/vereinsfest-dorffest): Festbankgarnituren 60/80 mit integrierten Bänken
+- [Konferenz & Seminar](https://ces-repo.github.io/ces-static-backup/konferenz-seminar): Seminartische Woody 160×80, Lucy-Stühle
+- [Catering-Unterstützung](https://ces-repo.github.io/ces-static-backup/catering-unterstuetzung): Backup-Equipment für Caterer
+- [Geschirr mieten in Zürich](https://ces-repo.github.io/ces-static-backup/zuerich-geschirr-mieten): lokaler Zürich-Fokus
+
+## Lieferung, Abholung, Preise
+
+- [Transportkosten](https://ces-repo.github.io/ces-static-backup/transportkosten): Lieferung und Abholung je als eigener Weg; pro Weg eine Gewichtspauschale (bis 500 kg CHF 75, bis 1000 kg CHF 100, bis 1500 kg CHF 150, darüber Zeittarif) plus CHF 2.00 je Kilometer ab dem 15. Kilometer; Zeitfenster 2 h +50 %, Fixtermin +100 %; Samstagnachmittag/Sonntag Ausserzeit CHF 350 je Mitarbeiter; in der Hochsaison (Mai–September, Dezember) bei sehr kurzfristigen Anfragen Last-Minute-Zuschlag CHF 75
+- Selbstabholung und Rückgabe im Lager Schlieren Mo–Fr 8–12 und 13:30–17 Uhr, am Wochenende geschlossen
+- Mietpreise verstehen sich exkl. MwSt. (8.1 %) als Pauschale bis 4 Tage; die Offertenanfrage im Shop ist unverbindlich, die verbindliche Offerte folgt per E-Mail
+- [FAQ](https://ces-repo.github.io/ces-static-backup/unsere-faq): häufige Fragen zu Miete, Lieferung, Reinigung, Kaution
+- [AGB](https://ces-repo.github.io/ces-static-backup/agb): Mietbedingungen, Haftung, Stornofristen
+
+## Service & Firma
+
+- [Über uns](https://ces-repo.github.io/ces-static-backup/uber): Geschichte, Gründer-Team, Werte
+- [Adresse & Anfahrt](https://ces-repo.github.io/ces-static-backup/adresse-anfahrt): Lager Badenerstrasse 116, 8952 Schlieren
+- [Kontakt](https://ces-repo.github.io/ces-static-backup/kontakt): Anfrageformular und Telefon
+
+## Kontakt
+
+- **E-Mail:** anfrage@catering-miete.ch
+- **Telefon:** +41 44 730 70 70 (Mo–Fr 8–12 und 13:30–17 Uhr)
+- **Webshop:** https://www.catering-miete.ch
+- **Verkaufsshops:** https://rampenverkauf.shop (Occasion und Neuware aus eigenem Bestand), https://kaufen.catering-miete.ch (Neuware Bartscher, Maison Truffe)
+- **Für Caterer:** https://anlassplanung.ch (Offerten-Tool), https://marktplatz.catering-miete.ch (Anbieter-Verzeichnis)
+- **English:** https://www.catering-miete.com
+- **Standort:** Schlieren ZH, Schweiz · **Liefergebiet:** Deutschschweiz
+
+## Optional
+
+- [Instagram](https://www.instagram.com/cateringmiete): aktuelle Shootings
+- [Datenschutzerklärung](https://ces-repo.github.io/ces-static-backup/datenschutzerklaerung)
+- [Impressum](https://ces-repo.github.io/ces-static-backup/impressum)
+- [Cookie-Richtlinie](https://ces-repo.github.io/ces-static-backup/cookie-richtlinie-eu)
