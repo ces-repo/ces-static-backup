@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/shop</loc>
-		<lastmod>2026-09-14T13:03:06+00:00</lastmod>
+		<lastmod>2026-09-28T01:00:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/raclette-ofen-pop-mieten.html</loc>
@@ -23,13 +23,6 @@
 		<lastmod>2025-11-21T07:47:27+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Champagnerkuehler-klein-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/teller-17-x-8-5-table-mieten.html</loc>
-		<lastmod>2025-11-21T07:47:47+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Teller-17-x-8.5-1.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -61,20 +54,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/weck-glas-370ml-mieten.html</loc>
-		<lastmod>2025-11-22T04:01:33+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Weckglas-370ml.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/buffet-brotkorb-oval-xl-mieten.html</loc>
-		<lastmod>2025-11-23T02:01:24+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Buffetkorb-XXL.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/kaffeeloeffel-kairo.html</loc>
 		<lastmod>2025-11-23T02:01:42+00:00</lastmod>
 		<image:image>
@@ -86,13 +65,6 @@
 		<lastmod>2025-11-23T03:01:29+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/11/Kaffeeloeffel-Kupfer-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/teller-oco-8-5-cm.html</loc>
-		<lastmod>2025-11-23T03:01:46+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2025/10/Teller-oco.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -523,13 +495,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/champagnerschale-stripe-klar-mieten.html</loc>
-		<lastmod>2025-12-05T03:01:49+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2025/04/Champagnerschale-klar.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/verlaengerungskabel-10m-euro16-5p-mieten.html</loc>
 		<lastmod>2025-12-05T04:00:29+00:00</lastmod>
 		<image:image>
@@ -740,13 +705,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/tischtuch-240-x-240-cm-mieten.html</loc>
-		<lastmod>2025-12-10T02:01:15+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2025/10/Tischtuch.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/whiskybecher-vintage-mieten.html</loc>
 		<lastmod>2025-12-10T02:01:38+00:00</lastmod>
 		<image:image>
@@ -870,13 +828,6 @@
 		<lastmod>2025-12-11T04:00:35+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Schale-9.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/stuhlhusse-stretch-schwarz-mieten.html</loc>
-		<lastmod>2025-12-11T04:01:30+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/c/h/chair_cover_banquet_premium_stretch_black_1_1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1027,13 +978,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/aufschnittmaschine-mieten.html</loc>
-		<lastmod>2025-12-14T03:00:35+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Aufschnittmaschine-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/organza-schleifenband-orange-mieten.html</loc>
 		<lastmod>2025-12-14T03:00:59+00:00</lastmod>
 		<image:image>
@@ -1045,13 +989,6 @@
 		<lastmod>2025-12-14T03:01:21+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Chafing-dish.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/schale-11-x-11-table-mieten.html</loc>
-		<lastmod>2025-12-14T03:01:57+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Schale-17-x-17-1.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1108,13 +1045,6 @@
 		<lastmod>2025-12-15T04:00:59+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Teller-30-2.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/aschenbecher-bistro-mieten.html</loc>
-		<lastmod>2025-12-15T04:01:26+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Aschenbecher-bisrto.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1339,13 +1269,6 @@
 		<lastmod>2025-12-19T03:01:04+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Organza-lavendel.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/kombidaempfer-steamer-10-x-gn-1-1-mieten.html</loc>
-		<lastmod>2025-12-19T03:01:25+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Kombidaempfer.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1587,13 +1510,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/eisportionierer-glace-schoepfloeffel-mieten.html</loc>
-		<lastmod>2025-12-23T03:02:07+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Eisportionierer-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/barhocker-z-schwarz-mieten.html</loc>
 		<lastmod>2025-12-23T04:01:30+00:00</lastmod>
 		<image:image>
@@ -1612,13 +1528,6 @@
 		<lastmod>2025-12-24T02:00:28+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/10/Fischgabel-Chateau.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/propangas-pro-kilo-mieten.html</loc>
-		<lastmod>2025-12-24T03:00:28+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Propangas.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1972,13 +1881,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/schale-17-x-17-mieten.html</loc>
-		<lastmod>2025-12-30T02:00:48+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Schale-17-x-17.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/servierloeffel-s-mieten.html</loc>
 		<lastmod>2025-12-30T02:01:13+00:00</lastmod>
 		<image:image>
@@ -2039,13 +1941,6 @@
 		<lastmod>2026-03-24T09:29:28+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/01/Retro-Audio-Gaestebuch.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/tischtuch-rund-o-330cm-black-mieten.html</loc>
-		<lastmod>2026-03-24T09:29:50+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/01/Banketttisch-rund-1.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2315,13 +2210,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/tischtuch-225-cm-x-350-cm-rose-mieten.html</loc>
-		<lastmod>2026-03-29T04:01:52+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/01/Eckig-Rose-banketttisch-180-2.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/aperogabel-madrid-mieten.html</loc>
 		<lastmod>2026-03-29T04:02:25+00:00</lastmod>
 		<image:image>
@@ -2473,13 +2361,6 @@
 		<lastmod>2026-04-09T06:35:30+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/11/Champagnerschale-gruen-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/champagnerschale-stripe-gelb-mieten.html</loc>
-		<lastmod>2026-04-09T06:35:32+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/11/Champagnerglas-Stripe-Gelb-1.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2865,6 +2746,125 @@
 		<lastmod>2026-09-14T13:03:06+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/05/Husse-fuer-Festbankgarnitur.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/tischtuch-rund-o-330cm-black-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/01/Banketttisch-rund-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/aschenbecher-bistro-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Aschenbecher-bisrto.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/tischtuch-240-x-240-cm-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2025/10/Tischtuch.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/kombidaempfer-steamer-10-x-gn-1-1-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Kombidaempfer.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/propangas-pro-kilo-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Propangas.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/stuhlhusse-stretch-schwarz-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/c/h/chair_cover_banquet_premium_stretch_black_1_1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/buffet-brotkorb-oval-xl-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Buffetkorb-XXL.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/tischtuch-225-cm-x-350-cm-rose-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/01/Eckig-Rose-banketttisch-180-2.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/schale-17-x-17-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Schale-17-x-17.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/schale-11-x-11-table-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Schale-17-x-17-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/eisportionierer-glace-schoepfloeffel-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Eisportionierer-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/aufschnittmaschine-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Aufschnittmaschine-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/teller-17-x-8-5-table-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Teller-17-x-8.5-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/weck-glas-370ml-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/11/Weckglas-370ml.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/champagnerschale-stripe-klar-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2025/04/Champagnerschale-klar.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/teller-oco-8-5-cm.html</loc>
+		<lastmod>2026-09-28T01:00:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2025/10/Teller-oco.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/champagnerschale-stripe-gelb-mieten.html</loc>
+		<lastmod>2026-09-28T01:00:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/11/Champagnerglas-Stripe-Gelb-1.webp</image:loc>
 		</image:image>
 	</url>
 </urlset>
