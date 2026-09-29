@@ -63,7 +63,7 @@ Der Mietshop unterscheidet sich durch: echte Preise (nichts «auf Anfrage»), Mi
 
 ## Lieferung, Abholung, Preise
 
-- [Transportkosten](https://ces-repo.github.io/ces-static-backup/transportkosten): Lieferung und Abholung je als eigener Weg; pro Weg eine Gewichtspauschale (bis 500 kg CHF 75, bis 1000 kg CHF 100, bis 1500 kg CHF 150, darüber Zeittarif) plus CHF 2.00 je Kilometer ab dem 15. Kilometer; Zeitfenster 2 h +50 %, Fixtermin +100 %; Samstagnachmittag/Sonntag Ausserzeit CHF 350 je Mitarbeiter; in der Hochsaison (Mai–September, Dezember) bei sehr kurzfristigen Anfragen Last-Minute-Zuschlag CHF 75
+- [Transportkosten](https://ces-repo.github.io/ces-static-backup/transportkosten): Lieferung und Abholung je als eigener Weg; pro Weg eine Gewichtspauschale (bis 500 kg CHF 75, bis 1000 kg CHF 100, bis 1500 kg CHF 150, darüber Zeittarif) plus CHF 2.00 je Kilometer ab dem 15. Kilometer; Zeitfenster 2 h +50 %, Fixtermin +100 %; Samstagnachmittag/Sonntag Ausserzeit CHF 350 je Mitarbeiter; bei sehr kurzfristigen Anfragen (heute/morgen bzw. Freitag/Wochenende auf Montag) Last-Minute-Gebühr CHF 75
 - Selbstabholung und Rückgabe im Lager Schlieren Mo–Fr 8–12 und 13:30–17 Uhr, am Wochenende geschlossen
 - Mietpreise verstehen sich exkl. MwSt. (8.1 %) als Pauschale bis 4 Tage; die Offertenanfrage im Shop ist unverbindlich, die verbindliche Offerte folgt per E-Mail
 - [FAQ](https://ces-repo.github.io/ces-static-backup/unsere-faq): häufige Fragen zu Miete, Lieferung, Reinigung, Kaution
