@@ -34,11 +34,11 @@ jQuery(document).ready(function ($) {
         }
         if( $('#additional_date_from_liefer').length )
         {
-            $( "#additional_date_from_liefer" ).datepicker({ dateFormat: 'dd-mm-yy' }).datepicker("setDate",'now');
+            $( "#additional_date_from_liefer" ).datepicker({ dateFormat: 'dd-mm-yy' }); // 29.09.2026: kein Vorbelegen mit heute (loeste sofort den Last-Minute-Zuschlag aus)
         }
         if( $('#additional_date_to_liefer').length )
         {
-            $( "#additional_date_to_liefer" ).datepicker({ dateFormat: 'dd-mm-yy' }).datepicker("setDate",'now');
+            $( "#additional_date_to_liefer" ).datepicker({ dateFormat: 'dd-mm-yy' }); // 29.09.2026: kein Vorbelegen mit heute (loeste sofort den Last-Minute-Zuschlag aus)
         }
         if( $('#additional_time_from_liefer').length )
         {
