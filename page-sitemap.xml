@@ -402,43 +402,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/uber</loc>
-		<lastmod>2024-01-29T15:51:31+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/dining-table-1.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/steps.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/ux-cate-icon-01.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/planet-earth-1.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-1.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-2.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-3.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-4.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/about-banner.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/Bilder.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/vission-img.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/stellenangebote-lagermitarbeiter-m-w-d-mit-schwerpunkt-glaspolierung</loc>
 		<lastmod>2024-02-08T15:41:11+00:00</lastmod>
 	</url>
@@ -579,16 +542,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/catering-unterstuetzung</loc>
-		<lastmod>2026-04-13T18:26:36+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/01/Styled-Shooting-JOSY_279_websize.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/01/DSC_5216-scaled.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/3d-druck</loc>
 		<lastmod>2026-05-05T09:58:38+00:00</lastmod>
 	</url>
@@ -683,6 +636,53 @@
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/bestellung-per-excel</loc>
 		<lastmod>2026-10-26T12:03:50+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/catering-unterstuetzung</loc>
+		<lastmod>2026-10-30T08:52:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/01/Styled-Shooting-JOSY_279_websize.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/01/DSC_5216-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/uber</loc>
+		<lastmod>2026-10-30T09:11:55+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/dining-table-1.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/steps.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/ux-cate-icon-01.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/planet-earth-1.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-2.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-3.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/service-icon-4.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/about-banner.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/02/Bilder.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2022/03/vission-img.jpg</image:loc>
+		</image:image>
 	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
