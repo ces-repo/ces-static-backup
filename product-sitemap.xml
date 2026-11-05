@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/shop</loc>
-		<lastmod>2026-11-02T12:20:39+00:00</lastmod>
+		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/raclette-ofen-pop-mieten.html</loc>
@@ -478,13 +478,6 @@
 		<lastmod>2025-12-05T04:00:29+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Verlaengerungskabel.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/mobiliar-package-6-personen-eckig-mieten.html</loc>
-		<lastmod>2025-12-05T04:01:24+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Package-6-pax.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1157,13 +1150,6 @@
 		<lastmod>2025-12-17T15:28:38+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/h/u/husse_1_1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/mobiliar-package-8-personen-rund-mieten.html</loc>
-		<lastmod>2025-12-18T02:01:28+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Package-8-pax.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2644,27 +2630,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/dinner-package-premium-mieten.html</loc>
-		<lastmod>2026-09-06T08:12:18+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Bild-Premium-wasser-wein-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/dinner-package-premium-plus-mieten.html</loc>
-		<lastmod>2026-09-06T08:12:33+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Bild-Premium-wasser-wein-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/apero-package-premium-mieten.html</loc>
-		<lastmod>2026-09-06T08:12:34+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Champagnerglas-Premium.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/husse-fuer-festbankgarnitur-60cm-mieten.html</loc>
 		<lastmod>2026-09-14T13:03:06+00:00</lastmod>
 		<image:image>
@@ -2879,6 +2844,41 @@
 		<lastmod>2026-11-02T12:20:39+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/10/weinglas-kristallschliff.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/mobiliar-package-8-personen-rund-mieten.html</loc>
+		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Package-8-pax.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/mobiliar-package-6-personen-eckig-mieten.html</loc>
+		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Package-6-pax.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/dinner-package-premium-mieten.html</loc>
+		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Bild-Premium-wasser-wein-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/dinner-package-premium-plus-mieten.html</loc>
+		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Bild-Premium-wasser-wein-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/apero-package-premium-mieten.html</loc>
+		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Champagnerglas-Premium.webp</image:loc>
 		</image:image>
 	</url>
 </urlset>
