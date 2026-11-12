@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/shop</loc>
-		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
+		<lastmod>2026-11-11T09:14:10+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/raclette-ofen-pop-mieten.html</loc>
@@ -289,13 +289,6 @@
 		<lastmod>2025-11-29T04:01:15+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/01/Teller-20.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/gluehweinkocher-gluehweintopf-mieten.html</loc>
-		<lastmod>2025-11-30T02:00:46+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2019/10/Gluehweinkocher-1.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2879,6 +2872,13 @@
 		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2018/08/Champagnerglas-Premium.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/gluehweinkocher-gluehweintopf-mieten.html</loc>
+		<lastmod>2026-11-11T09:14:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/11/gluehweinkocher-gluehweintopf-2026.webp</image:loc>
 		</image:image>
 	</url>
 </urlset>
