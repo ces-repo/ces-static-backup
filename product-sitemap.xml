@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/shop</loc>
-		<lastmod>2026-11-17T16:45:10+00:00</lastmod>
+		<lastmod>2026-11-23T15:52:13+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/raclette-ofen-pop-mieten.html</loc>
@@ -2014,13 +2014,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/gourmetteller-gross-29cm-mieten.html</loc>
-		<lastmod>2026-03-28T03:00:53+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/05/1908013-atable_ca37ab8d-c1a3-4669-84e6-7a6fa69b3a2b_1512x-1.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/gn-blech-1-1-20mm-mieten.html</loc>
 		<lastmod>2026-03-28T03:01:12+00:00</lastmod>
 		<image:image>
@@ -2193,13 +2186,6 @@
 		<lastmod>2026-03-31T02:00:45+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/01/Platzteller-Zermatt-mit-Goldrand-2.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/gourmetteller-klein-21-8cm-mieten.html</loc>
-		<lastmod>2026-03-31T02:01:08+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2023/06/gourmetteller_klein.webp</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2879,6 +2865,20 @@
 		<lastmod>2026-11-11T09:14:10+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/11/gluehweinkocher-gluehweintopf-2026.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/gourmetteller-klein-21-8cm-mieten.html</loc>
+		<lastmod>2026-11-23T15:52:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2023/06/gourmetteller_klein.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/gourmetteller-gross-29cm-mieten.html</loc>
+		<lastmod>2026-11-23T15:52:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/05/1908013-atable_ca37ab8d-c1a3-4669-84e6-7a6fa69b3a2b_1512x-1.webp</image:loc>
 		</image:image>
 	</url>
 </urlset>
