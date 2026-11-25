@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/shop</loc>
-		<lastmod>2026-11-23T15:52:13+00:00</lastmod>
+		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/raclette-ofen-pop-mieten.html</loc>
@@ -2879,6 +2879,41 @@
 		<lastmod>2026-11-23T15:52:13+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2024/05/1908013-atable_ca37ab8d-c1a3-4669-84e6-7a6fa69b3a2b_1512x-1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/easybar-tresenelement-1-35m-mit-led-mieten.html</loc>
+		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/e/a/easybar_one_sektbar.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/easybar-tresenelement-2m-mit-led-mieten.html</loc>
+		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/e/a/easybar_tresen200.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/easy-kuehlschrank-mit-transporter-mieten.html</loc>
+		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/f/i/file_10_9.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/easybar-trolley-mit-rollen-mieten.html</loc>
+		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/f/i/file_10_8.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/easy-barbike-mieten.html</loc>
+		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/s/h/shop_bike_bar.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
