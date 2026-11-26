@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/shop</loc>
-		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
+		<lastmod>2026-11-25T05:00:05+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/raclette-ofen-pop-mieten.html</loc>
@@ -2812,20 +2812,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/champagnerglas-chateau-mieten.html</loc>
-		<lastmod>2026-11-02T12:20:25+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/10/champagnerglas-kristallschliff.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/weinglas-chateau-mieten.html</loc>
-		<lastmod>2026-11-02T12:20:39+00:00</lastmod>
-		<image:image>
-			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/10/weinglas-kristallschliff.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/mobiliar-package-8-personen-rund-mieten.html</loc>
 		<lastmod>2026-11-04T10:16:52+00:00</lastmod>
 		<image:image>
@@ -2914,6 +2900,20 @@
 		<lastmod>2026-11-24T08:47:22+00:00</lastmod>
 		<image:image>
 			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/media/catalog/product/s/h/shop_bike_bar.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/champagnerglas-chateau-mieten.html</loc>
+		<lastmod>2026-11-25T05:00:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/10/champagnerglas-kristallschliff.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ces-repo.github.io/ces-static-backup/Vermietung/weinglas-chateau-mieten.html</loc>
+		<lastmod>2026-11-25T05:00:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://ces-repo.github.io/ces-static-backup/wp-content/uploads/2026/10/weinglas-kristallschliff.webp</image:loc>
 		</image:image>
 	</url>
 </urlset>
